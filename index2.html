@@ -28,6 +28,12 @@
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  
   <!-- =======================================================
     Theme Name: TheEvent
     Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
@@ -79,25 +85,193 @@
   </section>
 
 
-  <section id="gallery" class="wow fadeInUp">
 
+  <section id="schedule" class="section-with-bg">
+    <div class="container wow fadeInUp">
+      <div class="section-header">
+        <h2>Sobre nós</h2>
+        <!-- <p>Here is our event schedule</p> -->
+      </div>
+
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <!-- cor 0cb2cc azul turquesa
+          0f1c4d azul escuro que tava no site
+          f72346 rosa que tava no site
+          -->
+          <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab"><span class="fa fa-home"></span><br><span>Bem vindos</span></a>
+          <!-- <a href="#tab-i1" data-toggle="tab"><span class="fa fa-play"></span><br><span>Experiences</span></a> -->
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#day-2" role="tab" data-toggle="tab"><span class="fa fa-users"></span><br><span>Recepcionistas</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#day-3" role="tab" data-toggle="tab"><span class="fa fa-university"></span><br><span>Salas</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#day-4" role="tab" data-toggle="tab"><span class="fa fa-map-marker"></span><br><span>Localização</span></a>
+        </li>
+      </ul>
+
+      <div class="tab-content row justify-content-center">
+        <!-- Schdule Day 1 -->
+        <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+          <div class="row schedule-item">
+            <div class="col-md-10">
+              <h4>Bem vindos!</h4>
+              <p>Escrever aqui algo sobre a magni .</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schdule Day 2 -->
+        <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+          <div class="row schedule-item">
+            <div class="col-md-10">
+              <h4>Recepcionista</h4>
+              <p>Descrever sobre o serviço das recepcionistas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schdule Day 3 -->
+        <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
+          <div class="row schedule-item">
+            <div class="col-md-10">
+              <h4>Salas</h4>
+              <p>Descrever sobre as salas.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Schdule Day 4 -->
+        <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-4">
+          <div class="row schedule-item">
+            <div class="col-md-10">
+              <h4>Localização previlegiada</h4>
+              <p>Descrever sobre a localização.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+  <section id="buy-tickets" class="section-with-bg wow fadeInUp">
     <div class="container">
       <div class="section-header">
-        <h2>Gallery</h2>
-        <p>Check our gallery from the recent events</p>
+        <h2>Nossos Planos</h2>
+        <p>Breve descrição.</p>
       </div>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Plano 1</h5>
+              <h6 class="card-price text-center">R$150</h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa fa-check"></i></span>Opção 1</li>
+                <li><span class="fa-li"><i class="fa fa-check"></i></span>Opção 2</li>
+                <li><span class="fa-li"><i class="fa fa-check"></i></span>Opção 3</li>
+                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Opção 4</li>
+                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Opção 5</li>
+                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Opção 6</li>
+              </ul>
+              <hr>
+              <div class="text-center">
+                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Contratar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Plano 2</h5>
+              <h6 class="card-price text-center">$250</h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa fa-check"></i></span>Opção 1</li>
+                <li><span class="fa-li"><i class="fa fa-check"></i></span>Opção 2</li>
+                <li><span class="fa-li"><i class="fa fa-check"></i></span>Opção 3</li>
+                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Opção 4</li>
+                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Opção 5</li>
+                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Opção 6</li>
+              </ul>
+              <hr>
+              <div class="text-center">
+                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Contratar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pro Tier -->
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Plano 3</h5>
+              <h6 class="card-price text-center">$350</h6>
+              <hr>
+              <ul class="fa-ul">
+                <li><span class="fa-li"><i class="fa fa-check"></i></span>Opção 1</li>
+                <li><span class="fa-li"><i class="fa fa-check"></i></span>Opção 2</li>
+                <li><span class="fa-li"><i class="fa fa-check"></i></span>Opção 3</li>
+                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Opção 4</li>
+                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Opção 5</li>
+                <li class="text-muted"><span class="fa-li"><i class="fa fa-times"></i></span>Opção 6</li>
+              </ul>
+              <hr>
+              <div class="text-center">
+                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Contratar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="owl-carousel gallery-carousel">
-      <a href="img/gallery/1.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/1.jpg" alt=""></a>
-      <a href="img/gallery/2.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/2.jpg" alt=""></a>
-      <a href="img/gallery/3.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/3.jpg" alt=""></a>
-      <a href="img/gallery/4.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/4.jpg" alt=""></a>
-      <a href="img/gallery/5.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/5.jpg" alt=""></a>
-      <a href="img/gallery/6.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/6.jpg" alt=""></a>
-      <a href="img/gallery/7.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/7.jpg" alt=""></a>
-      <a href="img/gallery/8.jpg" class="venobox" data-gall="gallery-carousel"><img src="img/gallery/8.jpg" alt=""></a>
-    </div>
+    <!-- Modal Order Form -->
+    <div id="buy-ticket-modal" class="modal fade">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Buy Tickets</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form method="POST" action="#">
+              <div class="form-group">
+                <input type="text" class="form-control" name="your-name" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="your-email" placeholder="Your Email">
+              </div>
+              <div class="form-group">
+                <select id="ticket-type" name="ticket-type" class="form-control">
+                  <option value="">-- Select Your Ticket Type --</option>
+                  <option value="standard-access">Standard Access</option>
+                  <option value="pro-access">Pro Access</option>
+                  <option value="premium-access">Premium Access</option>
+                </select>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn">Buy Now</button>
+              </div>
+            </form>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
   </section>
 
