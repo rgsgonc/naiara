@@ -1237,12 +1237,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #buy-tickets .card .card-price {
-  font-size: 48px;
+  /* fonte do valor na tabela de preço*/
+  font-size: 26px;
   margin: 0;
 }
 
 #buy-tickets .card ul li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 #buy-tickets .card .text-muted {
@@ -1599,6 +1600,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   #nav-menu-container {
     display: none;
+    border:10px solid;
   }
 
   #mobile-nav-toggle {
