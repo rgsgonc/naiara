@@ -1689,9 +1689,61 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-/* @media (max-width: 768px) {
-  .tabelapreco2 {
-    border:3px solid red;
-  
-  }
+/*Depoimentos*/
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  font-family: "Lato";
+  background: url('https://subtlepatterns.com/patterns/sativa.png');
 } */
+
+.main-gallery {
+  background: #f7f8fc;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  /* border-top: solid 10px #7AA641; */
+  
+
+}
+
+.gallery-cell {
+  width: 100%;
+  height: 380px;
+}
+
+.testimonial {
+  text-align: center;
+  max-width: 850px;
+  margin: 100px auto 130px auto;
+  padding: 0 20px;
+}
+
+.testimonial-avatar {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: -100px;
+}
+
+.testimonial-quote {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 10px 0;
+  text-align: justify;
+}
+
+.testimonial-author {
+  display: block;
+  font-weight: 800;
+  color: #7AA641;
+}
+
+.flickity-page-dots {
+  bottom: 25px;
+}
+
+.flickity-page-dots .dot.is-selected {
+  background: #7AA641;
+}
+

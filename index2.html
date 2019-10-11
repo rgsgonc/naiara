@@ -27,6 +27,8 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/flickity.min.css" rel="stylesheet">
+  <link href="css/reset.min.css" rel="stylesheet">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -71,37 +73,19 @@
     </div>
   </header>
 
-  <!--==========================
-    Intro Section
-  ============================-->
   <section id="intro">
-    <!-- <div class="intro-container wow fadeIn">
-      <h1 class="mb-4 pb-0">The Annual<br><span>Marketing</span> Conference</h1>
-      <p class="mb-4 pb-0">10-12 December, Downtown Conference Center, New York</p>
-      <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video"
-        data-autoplay="true"></a>
-      <a href="#about" class="about-btn scrollto">About The Event</a>
-    </div> -->
+    <!-- Nessa sessão está a imagem principal do site -->
   </section>
-
-
 
   <section id="schedule" class="section-with-bg">
     <div class="container wow fadeInUp">
       <div class="section-header">
         <h2>Sobre nós</h2>
-        <!-- <p>Here is our event schedule</p> -->
       </div>
-
       <ul class="nav nav-tabs" role="tablist">
         <li class="nav-item">
-          <!-- cor 0cb2cc azul turquesa
-          0f1c4d azul escuro que tava no site
-          f72346 rosa que tava no site
-          -->
           <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab"><span class="fa fa-home"></span><br><span>Bem
               vindos</span></a>
-          <!-- <a href="#tab-i1" data-toggle="tab"><span class="fa fa-play"></span><br><span>Experiences</span></a> -->
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#day-2" role="tab" data-toggle="tab"><span class="fa fa-users"></span><br><span>Recepcionistas</span></a>
@@ -154,11 +138,8 @@
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
-
   </section>
 
 
@@ -166,10 +147,10 @@
     <div class="container">
       <div class="section-header">
         <h2>Nossos Planos</h2>
-        <p>Breve descrição.</p>
       </div>
 
       <div class="tabelapreco">
+        <!-- Pacote de Hora Avulsa (R$40,00/hora) -->
         <div class="col-lg-5">
           <div class="card mb-3 mb-sm-0">
             <div class="card-body">
@@ -177,16 +158,35 @@
               <h6 class="card-price text-center">R$40,00/hora</h6>
               <hr>
               <ul class="fa-ul">
-                <li><span class="fa-li"><i class="fa fa-check"></i></span>Marque a qualquer hora</li>
-                <li><span class="fa-li"><i class="fa fa-check"></i></span>Recepcionista disponível</li>
-                <li><span class="fa-li"><i class="fa fa-check"></i></span>Confirmação de pacientes com 24hrs de
-                  antecedência</li>
-                <li><span class="fa-li"><i class="fa fa-check"></i></span>Remarcação de horário sem custo com até 12hrs
-                  de antecedência</li>
-                  <li>&nbsp;</li>
-                <li><span class="fa-li"></span>
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Marque a qualquer hora
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Recepcionista disponível
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Confirmação de pacientes com 24hrs de antecedência
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Remarcação de horário sem custo com até 12hrs de antecedência
+                </li>
+
+                <li>
+                  <span class="fa-li"></span>
                   <p style="font-size:10px;">* Acréscimo de R$10,00, caso utilize lixo infectante/perfurante</p>
                 </li>
+
               </ul>
               <hr>
               <div class="text-center">
@@ -196,7 +196,7 @@
           </div>
         </div>
 
-
+        <!-- Pacote 10 hrs mensais ($300,00/mês) -->
         <div class="col-lg-5">
           <div class="card mb-5 mb-lg-0">
             <div class="card-body">
@@ -204,15 +204,164 @@
               <h6 class="card-price text-center">$300,00/mês</h6>
               <hr>
               <ul class="fa-ul">
-                <li><span class="fa-li"><i class="fa fa-check"></i></span>Marque a qualquer hora</li>
-                <li><span class="fa-li"><i class="fa fa-check"></i></span>Recepcionista disponível</li>
-                <li><span class="fa-li"><i class="fa fa-check"></i></span>Confirmação de pacientes com 24hrs de
-                  antecedência</li>
-                <li><span class="fa-li"><i class="fa fa-check"></i></span>Remarcação de horário sem custo com até 12hrs
-                  de antecedência</li>
-                <li><span class="fa-li"><i class="fa fa-check"></i></span> Marque até 10 hrs avulsas dentro do mês</li>
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span> Marque até 10 hrs avulsas dentro do mês
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Recepcionista disponível
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Confirmação de pacientes com 24hrs de antecedência
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Remarcação de horário sem custo com até 12hrs de antecedência
+                </li>
+
+                <li>
+                  <span class="fa-li"></span>
+                  <p style="font-size:10px;">* Acréscimo de R$50,00, caso utilize lixo infectante/perfurante</p>
+                </li>
+
+              </ul>
+              <hr>
+              <div class="text-center">
+                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Contratar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Order Form -->
+      <!-- <div id="buy-ticket-modal" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Buy Tickets</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="POST" action="#">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                  <select id="ticket-type" name="ticket-type" class="form-control">
+                    <option value="">-- Select Your Ticket Type --</option>
+                    <option value="standard-access">Standard Access</option>
+                    <option value="pro-access">Pro Access</option>
+                    <option value="premium-access">Premium Access</option>
+                  </select>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn">Buy Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> -->
+  </section>
+
+  <section style="padding: 0px;" id="buy-tickets" class="section-with-bg wow fadeInUp">
+    <div class="container">
+      <div class="tabelapreco2">
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Período mensal</h5>
+              <h6 class="card-price text-center">$330/mês</h6>
+              <hr>
+              <ul class="fa-ul">
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span> Período fixo de 4 horas semanais
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Recepcionista disponível
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Confirmação de pacientes com 24hrs de antecedência
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span> Propaganda nas redes sociais
+                </li>
+
                 <li><span class="fa-li"></span>
-                  <p style="font-size:10px;">* Acréscimo de R$10,00, caso utilize lixo infectante/perfurante</p>
+                  <p style="font-size:10px;">* Acréscimo de R$50,00, caso utilize lixo infectante/perfurante</p>
+                </li>
+
+              </ul>
+              <hr>
+              <div class="text-center">
+                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Contratar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="espaco"></p>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Período Trimestral</h5>
+              <h6 class="card-price text-center">$310/mês</h6>
+              <hr>
+              <ul class="fa-ul">
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span> Período fixo de 4 horas semanais
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Recepcionista disponível
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Confirmação de pacientes com 24hrs de antecedência
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span> Propaganda nas redes sociais
+                </li>
+
+                <li><span class="fa-li"></span>
+                  <p style="font-size:10px;">* Acréscimo de R$50,00, caso utilize lixo infectante/perfurante</p>
                 </li>
               </ul>
               <hr>
@@ -223,6 +372,50 @@
           </div>
         </div>
 
+        <p class="espaco"></p>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title text-muted text-uppercase text-center">Período Semestral</h5>
+              <h6 class="card-price text-center">$290/mês</h6>
+              <hr>
+              <ul class="fa-ul">
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span> Período fixo de 4 horas semanais
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Recepcionista disponível
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Confirmação de pacientes com 24hrs de antecedência
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span> Propaganda nas redes sociais
+                </li>
+
+                <li><span class="fa-li"></span>
+                  <p style="font-size:10px;">* Acréscimo de R$50,00, caso utilize lixo infectante/perfurante</p>
+                </li>
+              </ul>
+              <hr>
+              <div class="text-center">
+                <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Contratar</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Modal Order Form -->
@@ -258,137 +451,71 @@
             </div>
           </div>
         </div>
-      </div>
   </section>
 
-  <section style="padding: 0px;" id="buy-tickets" class="section-with-bg wow fadeInUp">
-    <div class="container">
 
-      <div class="tabelapreco2">
-      <div class="col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-muted text-uppercase text-center">Período mensal</h5>
-            <h6 class="card-price text-center">$330/mês</h6>
-            <hr>
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Marque a qualquer hora</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Recepcionista disponível</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Confirmação de pacientes com 24hrs de
-                antecedência</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Remarcação de horário sem custo com até 12hrs
-                de antecedência</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span> Marque até 10 hrs avulsas dentro do mês</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span> Período fixo de 4 horas semanais</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span> Propaganda no site/instagram da profissional</li>
-              <li><span class="fa-li"></span>
-                <p style="font-size:10px;">* Acréscimo de R$10,00, caso utilize lixo infectante/perfurante</p>
-              </li>
-              
-            </ul>
-            <hr>
-            <div class="text-center">
-              <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Contratar</button>
-            </div>
-          </div>
+
+  <section id="buy-tickets" class="section-with-bg wow fadeInUp">
+    <div class="section-header">
+      <h2>Depoimentos</h2>
+    </div>
+    <div class="main-gallery">
+      <div class="gallery-cell">
+        <div class="testimonial">
+          <img class="testimonial-avatar" src="img/depoimentos/monik.png">
+          <q class="testimonial-quote">"Acho incrível a Ideia que a magni adotou em criar um consultório compartilhado.
+            Minha experiência com a clínica vem sendo positiva, a localização é ótima, as salas são bem estruturadas, o
+            ambiente climatizado, sem contar o suporte que a secretária oferece confirmando a agenda profissional. Para
+            quem não tem um espaço físico para atendimento recomendo."</q>
+          <span class="testimonial-author">Monik Emille Moreira CRFa - 10999</span>
         </div>
       </div>
-
-      <p class="espaco"></p>
-
-      <div class="col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-muted text-uppercase text-center">Período Trimestral</h5>
-            <h6 class="card-price text-center">$310/mês</h6>
-            <hr>
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Marque a qualquer hora</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Recepcionista disponível</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Confirmação de pacientes com 24hrs de
-                antecedência</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Remarcação de horário sem custo com até 12hrs
-                de antecedência</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span> Marque até 10 hrs avulsas dentro do mês</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span> Período fixo de 4 horas semanais</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span> Propaganda no site/instagram da profissional</li>
-              <li><span class="fa-li"></span>
-                <p style="font-size:10px;">* Acréscimo de R$10,00, caso utilize lixo infectante/perfurante</p>
-              </li>
-            </ul>
-            <hr>
-            <div class="text-center">
-              <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Contratar</button>
-            </div>
-          </div>
+      <div class="gallery-cell">
+        <div class="testimonial">
+          <img class="testimonial-avatar" src="img/depoimentos/bianca.png">
+          <q class="testimonial-quote">"O ambiente é ótimo! A recepção é bastante agradável e as salas possuem uma
+            estrutura excelente para atendimentos. Está tudo sempre muito bem higienizado e organizado para chegar e
+            atender, além de ficar em uma das melhores localizações do centro de Florianópolis. Fui sempre muito bem
+            atendida e os pacientes também adoram o local!"</q>
+          <span class="testimonial-author">Bianca Regiane Pires Vigo - CRN 106786P</span>
         </div>
       </div>
-
-      <p class="espaco"></p>
-
-      <div class="col-lg-4">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title text-muted text-uppercase text-center">Período Semestral</h5>
-            <h6 class="card-price text-center">$290/mês</h6>
-            <hr>
-            <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Marque a qualquer hora</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Recepcionista disponível</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Confirmação de pacientes com 24hrs de
-                antecedência</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span>Remarcação de horário sem custo com até 12hrs
-                de antecedência</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span> Marque até 10 hrs avulsas dentro do mês</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span> Período fixo de 4 horas semanais</li>
-              <li><span class="fa-li"><i class="fa fa-check"></i></span> Propaganda no site/instagram da profissional</li>
-              <li><span class="fa-li"></span>
-                <p style="font-size:10px;">* Acréscimo de R$10,00, caso utilize lixo infectante/perfurante</p>
-              </li>
-            </ul>
-            <hr>
-            <div class="text-center">
-              <button type="button" class="btn" data-toggle="modal" data-target="#buy-ticket-modal" data-ticket-type="standard-access">Contratar</button>
-            </div>
-          </div>
+      <div class="gallery-cell">
+        <div class="testimonial">
+          <img class="testimonial-avatar" src="img/depoimentos/jessica.png">
+          <q class="testimonial-quote">"A Magni Consultórios atende minhas necessidades como nutricionista porque
+            proporciona uma sala muito confortável para mim e para meus pacientes. Além disso a equipe é muito
+            atenciosa quando busco algum apoio para organizar a agenda ou entrar em contato com os pacientes. E também
+            vale comentar que os espaços estão sempre higienizados e são decorados, o que demonstra cuidado com todos
+            que compartilham."</q>
+          <span class="testimonial-author">Jéssica Rasquim Araujo - CRN 106617</span>
+        </div>
+      </div>
+      <div class="gallery-cell">
+        <div class="testimonial">
+          <img class="testimonial-avatar" src="img/depoimentos/susana.png">
+          <q class="testimonial-quote">"Acredito que nada acontece por acaso e o Magni Consultórios surgiu no momento
+            exato para tirar o meu Studio do papel! No Centro de Florianópolis, super bem localizado, equipado e com
+            uma equipe de apoio que me oferece o suporte necessário! Meu trabalho é humanizado, lido com a alma humana,
+            e este diferencial eu encontro, diariamente, nesta super parceria com o Magni Consultórios!"</q>
+          <span class="testimonial-author">Susana Souza - Terapeuta Transpessoal Integrativa - CRTH-BR 4300</span>
+        </div>
+      </div>
+      <div class="gallery-cell">
+        <div class="testimonial">
+          <img class="testimonial-avatar" src="img/depoimentos/magnus.png">
+          <q class="testimonial-quote">"Minha experiência está sendo ótima nos consultórios Magni. Excelência no
+            atendimento, organização, limpeza e harmonia são características identificadas e que fazem toda diferença.
+            "</q>
+          <span class="testimonial-author">Magnus Wailer CREF 024431- G/SC - Prof. Esp. Pscilogia Esportiva - Life
+            Coach - Terapeuta Reikiano</span>
         </div>
       </div>
     </div>
-
-    <!-- Modal Order Form -->
-    <div id="buy-ticket-modal" class="modal fade">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Buy Tickets</h4>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <form method="POST" action="#">
-              <div class="form-group">
-                <input type="text" class="form-control" name="your-name" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" name="your-email" placeholder="Your Email">
-              </div>
-              <div class="form-group">
-                <select id="ticket-type" name="ticket-type" class="form-control">
-                  <option value="">-- Select Your Ticket Type --</option>
-                  <option value="standard-access">Standard Access</option>
-                  <option value="pro-access">Pro Access</option>
-                  <option value="premium-access">Premium Access</option>
-                </select>
-              </div>
-              <div class="text-center">
-                <button type="submit" class="btn">Buy Now</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
   </section>
+
+
+
 
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
@@ -402,6 +529,16 @@
   <script src="lib/wow/wow.min.js"></script>
   <script src="lib/venobox/venobox.min.js"></script>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/flickity.pkgd.min.js"></script>
+  <script>
+    var flkty = new Flickity('.main-gallery', {
+      cellAlign: 'left',
+      contain: true,
+      wrapAround: true,
+      prevNextButtons: false,
+      autoPlay: 5000
+    });
+  </script>
 
   <!-- Contact Form JavaScript File -->
   <script src="contactform/contactform.js"></script>
