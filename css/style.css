@@ -1662,4 +1662,28 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+.tabelapreco {
+  margin-left: 200px;
+}
 
+.espaco{
+  border:none;
+}
+
+
+@media (max-width: 768px) {
+  .tabelapreco {
+    margin-left:1px;
+  }
+
+  .espaco{
+    border:5px;
+  }
+}
+
+/* @media (max-width: 768px) {
+  .tabelapreco2 {
+    border:3px solid red;
+  
+  }
+} */
