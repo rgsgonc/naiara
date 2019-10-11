@@ -211,6 +211,7 @@ h6 {
 }
 
 .nav-menu li {
+  /*Itens do menu*/
   position: relative;
   white-space: nowrap;
 }
@@ -804,6 +805,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: block;
   border-bottom: 0;
   margin-bottom: 30px;
+  
 }
 
 #schedule .nav-tabs li {
@@ -1670,7 +1672,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   border:none;
 }
 
-
 @media (max-width: 768px) {
   .tabelapreco {
     margin-left:1px;
@@ -1678,6 +1679,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
   .espaco{
     border:5px;
+  }
+  
+  #schedule .nav-tabs li {
+    display: inline-block;
+    margin-bottom: 0;
+    width: 350px;
+    padding: 10px;
   }
 }
 
