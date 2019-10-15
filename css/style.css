@@ -1672,7 +1672,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border:none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 640px) {
   .tabelapreco {
     margin-left:1px;
   }
@@ -1688,6 +1688,25 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 10px;
   }
 }
+
+/*largura maxima de 640px ou menos*/
+@media (max-width: 667px) {
+  .tabelapreco {
+    margin-left:1px;
+  }
+
+  .espaco{
+    border:5px;
+  }
+  
+  #schedule .nav-tabs li {
+    display: inline-block;
+    margin-bottom: 0;
+    width: 350px;
+    padding: 10px;
+  }
+}
+
 
 /*Depoimentos*/
 * {
