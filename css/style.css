@@ -72,7 +72,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #f82249;
+  background: #0cb2cc;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -89,13 +89,13 @@ h6 {
 }
 
 .back-to-top:focus {
-  background: #e0072f;
+  background: #16daf8;
   color: #fff;
   outline: none;
 }
 
 .back-to-top:hover {
-  background: #e0072f;
+  background: #16daf8;
   color: #fff;
 }
 
@@ -402,7 +402,7 @@ h6 {
 }
 
 #mobile-nav ul li a {
-  color: rgb(245, 4, 4);
+  color:#fff;
   font-size: 17px;
   overflow: hidden;
   padding: 10px 22px 10px 15px;
@@ -411,6 +411,7 @@ h6 {
   width: 100%;
   display: block;
   outline: none;
+  font-family: "Raleway", sans-serif;
 }
 
 #mobile-nav ul li a:hover {
