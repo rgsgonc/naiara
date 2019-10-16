@@ -805,7 +805,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: block;
   border-bottom: 0;
   margin-bottom: 30px;
-  
 }
 
 #schedule .nav-tabs li {
@@ -846,7 +845,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .schedule-item:hover {
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 #schedule .schedule-item time {
@@ -885,8 +884,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .schedule-item p {
-  font-style: italic;
-  color: #152b79;
+  /* font-style: italic; */
+  /* color: #152b79; */
   margin-bottom: 0;
 }
 
