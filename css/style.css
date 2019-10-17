@@ -1046,7 +1046,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #gallery .owl-dot.active {
-  background-color: #f82249;
+  background-color: #0cb2cc;
 }
 
 #gallery .gallery-carousel .owl-stage-outer {
@@ -1054,7 +1054,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #gallery .gallery-carousel .center {
-  border: 6px solid #f82249;
+  border: 6px solid #0cb2cc;
   margin: -10px;
   box-sizing: content-box;
   padding: 4px;
