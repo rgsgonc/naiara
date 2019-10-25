@@ -806,11 +806,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: block;
   border-bottom: 0;
   margin-bottom: 30px;
+  font-size:12px;
 }
 
 #schedule .nav-tabs li {
   display: inline-block;
   margin-bottom: 0;
+  width: 275px;
+  /*se der problema na visualização alterar aqui - TODO*/
 }
 
 #schedule .nav-tabs a {
