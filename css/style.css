@@ -114,7 +114,8 @@ h6 {
   display: block;
   width: 60px;
   height: 5px;
-  background: #f82249;
+  /* background: #f82249; */
+  background: red;
   bottom: 0;
   left: calc(50% - 25px);
 }
@@ -125,6 +126,7 @@ h6 {
   text-align: center;
   font-weight: 700;
   margin-bottom: 10px;
+  color:#0cb2cc;
 }
 
 .section-header p {
@@ -289,7 +291,7 @@ h6 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #f82249;
+  background-color: #0cb2cc;
   visibility: hidden;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -847,6 +849,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-bottom: 15px;
   transition: background-color ease-in-out 0.3s;
   color: #878787;
+  font-size: 17px;
 }
 
 #schedule .schedule-item:hover {
@@ -876,9 +879,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .schedule-item h4 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   margin-bottom: 5px;
+  font-style: bold;
+  color:#0cb2cc;
+}
+
+.agendeSuaVisita {
+  font-size: 18px;
+  color:#0cb2cc;
 }
 
 #schedule .schedule-item h4 span {
@@ -1246,10 +1256,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   /* fonte do valor na tabela de preço*/
   font-size: 26px;
   margin: 0;
+  color:#0cb2cc;
 }
 
 #buy-tickets .card ul li {
   margin-bottom: 10px;
+  color:#878787;
 }
 
 #buy-tickets .card .text-muted {
@@ -1407,10 +1419,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer .footer-top {
   background: #040919;
   padding: 60px 0 30px 0;
+  background-image: url('../img/ponte.jpg'); 
 }
 
 #footer .footer-top .footer-info {
   margin-bottom: 30px;
+  
 }
 
 #footer .footer-top .footer-info h3 {
@@ -1420,7 +1434,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 1;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  color: #fff;
+  
 }
 
 #footer .footer-top .footer-info img {
@@ -1433,7 +1447,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   line-height: 24px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
-  color: #fff;
+  color: #000;
 }
 
 #footer .footer-top .social-links a {
@@ -1459,7 +1473,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #footer .footer-top h4 {
   font-size: 14px;
   font-weight: bold;
-  color: #fff;
+  color: #000;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
@@ -1492,7 +1506,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #eee;
+  /* color: #eee; */
+  color:#000;
 }
 
 #footer .footer-top .footer-links ul a:hover {
@@ -1501,6 +1516,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
+  color:#000;
 }
 
 #footer .footer-top .footer-contact p {
@@ -1728,12 +1744,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: 300;
   padding: 10px 0;
   text-align: justify;
+  color: #878787;
 }
 
 .testimonial-author {
   display: block;
   font-weight: 800;
-  color: #7AA641;
+  color: #0cb2cc;
 
 }
 
@@ -1742,7 +1759,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .flickity-page-dots .dot.is-selected {
-  background: #7AA641;
+  background: #0cb2cc;
 }
 
 
@@ -1848,6 +1865,7 @@ body {
    background: transparent;
    transition: all ease .5s;
    border: 1px solid rgba(31,181,172,.9);
+   
  }
  .folded-corner:hover{
    background-color:#f7f8fc;
