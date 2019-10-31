@@ -999,8 +999,6 @@ Elements
 }
 
 /* box */
-
-
 .box {
 
 }
@@ -1570,12 +1568,6 @@ a.scrollup i:hover {
     -moz-animation-timing-function: linear;
 }
 
-
-
-
-
-
-
 /* blink btn */
 .blink {
   -webkit-animation-name: blink;
@@ -2087,3 +2079,13 @@ a.btn:focus{
 		padding:250px 0 0;
 	}
 }
+
+
+
+
+
+
+
+
+
+
