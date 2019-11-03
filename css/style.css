@@ -1776,6 +1776,60 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*Ipad Pro*/
+@media (max-width: 1198px) {
+  .tabelapreco {
+    margin-left:1px;
+  }
+
+  .tabelapreco2 {
+    margin-left:1px;
+    margin-top: -50px;
+  }
+
+  .espaco{
+    border:5px;
+  }
+  
+  #schedule .nav-tabs li {
+    /*botoes do bem-vindo, consultorios etc*/
+    display: inline-block;
+    margin-bottom: 0;
+    width: 1020px;
+    padding: 10px;
+  }
+
+  .gallery-cell {
+    /*quadrado do depoimento*/
+    width: 100%;
+    height: 460px;
+  }
+
+  .Services-tab{
+    margin-top:20px;
+    width: 400px !important;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #footer .footer-top {
+    /*footer*/
+    background: #040919;
+    padding: 60px 0 30px 0;
+    background-image: url('../img/ponte3.jpg'); 
+    background-size: 100%;
+    height: 320px; 
+  }
+
+  #buy-tickets .card {
+    /*tabela de preco*/
+    border-radius: 5px;
+    transition: all  0.3s ease-in-out;
+    box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+    width: 1000px;
+  }
+}
+
+/*Ipad Pro*/
 @media (max-width: 1024px) {
   .tabelapreco {
     margin-left:1px;
@@ -1879,45 +1933,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-/*ipad backpu*/
-/* @media (max-width: 768px) {
-  .tabelapreco {
-    margin-left:1px;
-  }
-
-  .espaco{
-    border:5px;
-  }
-  
-  #schedule .nav-tabs li {
-    display: inline-block;
-    margin-bottom: 0;
-    width: 700px;
-    padding: 10px;
-  }
-
-  .gallery-cell {
-    width: 100%;
-    height: 460px;
-  }
-
-  .Services-tab{
-    margin-top:20px;
-    width: 400px !important;
-    font-size: 16px;
-    text-align: center;
-  }
-
-  #footer .footer-top {
-    background: #040919;
-    padding: 60px 0 30px 0;
-    background-image: url('../img/ponte3.jpg'); 
-    background-size: 100%;
-    height: 520px;
-    
-  }
-} */
-
 /*iphone 6 7 e 8 plus*/
 @media (max-width: 414px) {
   .tabelapreco {
@@ -1937,7 +1952,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     /*botoes do bem-vindo, consultorios etc*/
     display: inline-block;
     margin-bottom: 0;
-    width: 380px;
+    width: 390px;
     padding: 10px;
   }
 
