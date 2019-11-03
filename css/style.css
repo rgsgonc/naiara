@@ -2039,6 +2039,60 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
+/*iphone Galaxy S5*/
+@media (max-width: 375px) {
+  .tabelapreco {
+    margin-left:1px;
+  }
+
+  .tabelapreco2 {
+    margin-left:1px;
+    margin-top: -80px;
+  }
+
+  .espaco{
+    border:5px;
+  }
+  
+  #schedule .nav-tabs li {
+    /*botoes do bem-vindo, consultorios etc*/
+    display: inline-block;
+    margin-bottom: 0;
+    width: 340px;
+    padding: 10px;
+  }
+
+  .gallery-cell {
+    /*quadrado do depoimento*/
+    width: 100%;
+    height: 460px;
+  }
+
+  .Services-tab{
+    margin-top:20px;
+    width: 400px !important;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #footer .footer-top {
+    /*footer*/
+    background: #040919;
+    padding: 60px 0 30px 0;
+    background-image: url('../img/ponte3.jpg'); 
+    background-size: 100%;
+    height: 710px; 
+  }
+
+  #buy-tickets .card {
+    /*tabela de preco*/
+    border-radius: 5px;
+    transition: all  0.3s ease-in-out;
+    box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+    width: 310px;
+  }
+}
+
 /*iphone 5/SE*/
 @media (max-width: 320px) {
   .tabelapreco {
