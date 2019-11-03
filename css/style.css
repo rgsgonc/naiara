@@ -1775,9 +1775,112 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #0cb2cc;
 }
 
+/*Ipad Pro*/
+@media (max-width: 1024px) {
+  .tabelapreco {
+    margin-left:1px;
+  }
 
-/*iphone 6 7 e 8 plus*/
-@media (max-width: 414px) {
+  .tabelapreco2 {
+    margin-left:1px;
+    margin-top: -50px;
+  }
+
+  .espaco{
+    border:5px;
+  }
+  
+  #schedule .nav-tabs li {
+    /*botoes do bem-vindo, consultorios etc*/
+    display: inline-block;
+    margin-bottom: 0;
+    width: 960px;
+    padding: 10px;
+  }
+
+  .gallery-cell {
+    /*quadrado do depoimento*/
+    width: 100%;
+    height: 460px;
+  }
+
+  .Services-tab{
+    margin-top:20px;
+    width: 400px !important;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #footer .footer-top {
+    background: #040919;
+    padding: 60px 0 30px 0;
+    background-image: url('../img/ponte3.jpg'); 
+    background-size: 100%;
+    height: 320px; 
+  }
+
+  #buy-tickets .card {
+    border-radius: 5px;
+    transition: all  0.3s ease-in-out;
+    box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+    width: 900px;
+  }
+}
+
+/*Ipad*/
+@media (max-width: 768px) {
+  .tabelapreco {
+    margin-left:1px;
+  }
+
+  .tabelapreco2 {
+    margin-left:1px;
+    margin-top: -80px;
+  }
+
+  .espaco{
+    border:5px;
+  }
+  
+  #schedule .nav-tabs li {
+    /*botoes do bem-vindo, consultorios etc*/
+    display: inline-block;
+    margin-bottom: 0;
+    width: 720px;
+    padding: 10px;
+  }
+
+  .gallery-cell {
+    /*quadrado do depoimento*/
+    width: 100%;
+    height: 460px;
+  }
+
+  .Services-tab{
+    margin-top:20px;
+    width: 400px !important;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #footer .footer-top {
+    background: #040919;
+    padding: 60px 0 30px 0;
+    background-image: url('../img/ponte3.jpg'); 
+    background-size: 100%;
+    height: 520px; 
+  }
+
+  #buy-tickets .card {
+    border-radius: 5px;
+    transition: all  0.3s ease-in-out;
+    box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+    width: 680px;
+  }
+}
+
+/*ipad backpu*/
+/* @media (max-width: 768px) {
   .tabelapreco {
     margin-left:1px;
   }
@@ -1789,7 +1892,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   #schedule .nav-tabs li {
     display: inline-block;
     margin-bottom: 0;
-    width: 380px;
+    width: 700px;
     padding: 10px;
   }
 
@@ -1810,7 +1913,61 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 60px 0 30px 0;
     background-image: url('../img/ponte3.jpg'); 
     background-size: 100%;
-    height: 720px;
+    height: 520px;
+    
+  }
+} */
+
+/*iphone 6 7 e 8 plus*/
+@media (max-width: 414px) {
+  .tabelapreco {
+    margin-left:1px;
+  }
+
+  .tabelapreco2 {
+    margin-left:1px;
+    margin-top: -80px;
+  }
+
+  .espaco{
+    border:5px;
+  }
+  
+  #schedule .nav-tabs li {
+    /*botoes do bem-vindo, consultorios etc*/
+    display: inline-block;
+    margin-bottom: 0;
+    width: 380px;
+    padding: 10px;
+  }
+
+  .gallery-cell {
+    /*quadrado do depoimento*/
+    width: 100%;
+    height: 460px;
+  }
+
+  .Services-tab{
+    margin-top:20px;
+    width: 400px !important;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #footer .footer-top {
+    background: #040919;
+    padding: 60px 0 30px 0;
+    background-image: url('../img/ponte3.jpg'); 
+    background-size: 100%;
+    height: 680px; 
+  }
+
+  #buy-tickets .card {
+    /*tabela de preco*/
+    border-radius: 5px;
+    transition: all  0.3s ease-in-out;
+    box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+    width: 360px;
   }
 }
 
@@ -1820,26 +1977,34 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-left:1px;
   }
 
+  .tabelapreco2 {
+    margin-left:1px;
+    margin-top: -80px;
+  }
+
   .espaco{
     border:5px;
   }
   
   #schedule .nav-tabs li {
+    /*botoes do bem-vindo, consultorios etc*/
     display: inline-block;
     margin-bottom: 0;
-    width: 350px;
+    width: 360px;
     padding: 10px;
   }
 
   .gallery-cell {
+    /*quadrado do depoimento*/
     width: 100%;
     height: 460px;
   }
 
   .Services-tab{
     margin-top:20px;
-    width: 350px !important;
-    margin-left: 10px;
+    width: 400px !important;
+    font-size: 16px;
+    text-align: center;
   }
 
   #footer .footer-top {
@@ -1847,9 +2012,74 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding: 60px 0 30px 0;
     background-image: url('../img/ponte3.jpg'); 
     background-size: 100%;
-    height: 720px;
+    height: 680px; 
+  }
+
+  #buy-tickets .card {
+    /*tabela de preco*/
+    border-radius: 5px;
+    transition: all  0.3s ease-in-out;
+    box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+    width: 320px;
   }
 }
+
+/*iphone 5/SE*/
+@media (max-width: 320px) {
+  .tabelapreco {
+    margin-left:1px;
+  }
+
+  .tabelapreco2 {
+    margin-left:1px;
+    margin-top: -80px;
+  }
+
+  .espaco{
+    border:5px;
+  }
+  
+  #schedule .nav-tabs li {
+    /*botoes do bem-vindo, consultorios etc*/
+    display: inline-block;
+    margin-bottom: 0;
+    width: 300px;
+    padding: 10px;
+  }
+
+  .gallery-cell {
+    /*quadrado do depoimento*/
+    width: 100%;
+    height: 460px;
+  }
+
+  .Services-tab{
+    margin-top:20px;
+    width: 400px !important;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #footer .footer-top {
+    background: #040919;
+    padding: 60px 0 30px 0;
+    background-image: url('../img/ponte3.jpg'); 
+    background-size: 100%;
+    height: 720px; 
+  }
+
+  #buy-tickets .card {
+    /*tabela de preco*/
+    border-radius: 5px;
+    transition: all  0.3s ease-in-out;
+    box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+    width: 270px;
+  }
+}
+
+
+
+
 
 
 
