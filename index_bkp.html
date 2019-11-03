@@ -5,33 +5,58 @@
   <meta charset="utf-8">
   <title>Magni Consultórios</title>
   <meta name="viewport" content="width=device-width, user-scalable=no">
-  <meta content="locação de consultório,sublocaçao de consultorio,coworking em saude,consultórios compartilhados,espaço de saude para locaçao"
-    name="keywords">
-  <meta content="locação de consultório,sublocaçao de consultorio,coworking em saude,consultórios compartilhados,espaço de saude para locaçao"
-    name="description">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Favicons -->
   <link href="img/favicon2.ico" rel="icon">
+  <!-- <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Sofia|Amita"
     rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
   <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
   <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="lib/animate/animate.min.css" rel="stylesheet">
   <link href="lib/venobox/venobox.css" rel="stylesheet">
   <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/flickity.min.css" rel="stylesheet">
   <link href="css/reset.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+
+  <!-- =======================================================
+    Theme Name: TheEvent
+    Theme URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+
 </head>
 
-<body>
+<body style="background-color: #F6F7FD !important">
+
   <header id="header">
     <div class="container">
+      <!-- <div id="logo" class="pull-left">
+        <a href="#intro" class="scrollto"><img src="img/logo.png" alt="" title=""></a>
+      </div> -->
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="http://www.magniconsultorios.com.br/index.html">Coworking</a></li>
-          <li><a href="http://www.magniconsultorios.com.br/profissionais.html">Profissionais</a></li>
+          <li><a href="#supporters">Coworking</a></li>
+          <li><a href="http://magniconsultorios.com.br/profissionais.html">Profissionais</a></li>
         </ul>
       </nav>
     </div>
@@ -39,80 +64,349 @@
 
   <section id="intro">
     <!-- Nessa sessão está a imagem principal do site -->
-    <title>Magni Consultórios</title>
-    <p style="color:white;">Locação de consultório; sublocaçao de consultorio; coworking em saude; consultórios
-      compartilhados; espaço de saude para locaçao.</p>
   </section>
 
-  <section id="schedule" class="section-with-bg">
-    <div class="container wow fadeInUp">
+  <style>
+    .container {
+  margin-top:30px;
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+  font-family: 'Source Sans Pro';
+  font-weight:700;
+} */
+
+.fancyTab {
+	text-align: center;
+  padding:15px 0;
+  background-color: #eee;
+	box-shadow: 0 0 0 1px #ddd;
+	top:15px;	
+  transition: top .2s;
+}
+
+.fancyTab.active {
+  top:0;
+  transition:top .2s;
+}
+
+.whiteBlock {
+  display:none;
+}
+
+.fancyTab.active .whiteBlock {
+  display:block;
+  height:2px;
+  bottom:-2px;
+  background-color:#fff;
+  width:99%;
+  position:absolute;
+  z-index:1;
+}
+
+.fancyTab a {
+	font-family: 'Source Sans Pro';
+	font-size:1.65em;
+	font-weight:300;
+  transition:.2s;
+  color:#333;
+}
+
+.fancyTabs {
+	border-bottom:2px solid #ddd;
+  margin: 15px 0 0;
+}
+
+li.fancyTab a {
+  padding-top: 15px;
+  top:-15px;
+  padding-bottom:0;
+}
+
+li.fancyTab.active a {
+  padding-top: inherit;
+}
+
+.fancyTab .fa {
+  font-size: 40px;
+	width:100%;
+	padding: 15px 0 5px;
+  color:#666;
+}
+
+.fancyTab.active .fa {
+  color: #cfb87c;
+}
+
+.fancyTab a:focus {
+	outline:none;
+}
+
+.fancyTabContent {
+  border-color: transparent;
+  box-shadow: 0 -2px 0 -1px #fff, 0 0 0 1px #ddd;
+  padding: 30px 15px 15px;
+  position:relative;
+  background-color:#F6F7FD;
+}
+
+.nav-tabs > li.fancyTab.active > a, 
+.nav-tabs > li.fancyTab.active > a:focus,
+.nav-tabs > li.fancyTab.active > a:hover {
+	border-width:0;
+}
+
+.nav-tabs > li.fancyTab:hover {
+	background-color:#f9f9f9;
+	box-shadow: 0 0 0 1px #ddd;
+}
+
+.nav-tabs > li.fancyTab.active:hover {
+  background-color:#fff;
+  box-shadow: 1px 1px 0 1px #fff, 0 0px 0 1px #ddd, -1px 1px 0 0px #ddd inset;
+}
+
+.nav-tabs > li.fancyTab:hover a {
+	border-color:transparent;
+}
+
+.nav.nav-tabs .fancyTab a[data-toggle="tab"] {
+  background-color:transparent;
+  border-bottom:0;
+}
+
+.nav-tabs > li.fancyTab:hover a {
+  border-right: 1px solid transparent;
+}
+
+.nav-tabs > li.fancyTab > a {
+	margin-right:0;
+	border-top:0;
+  padding-bottom: 30px;
+  margin-bottom: -30px;
+}
+
+.nav-tabs > li.fancyTab {
+	margin-right:0;
+	margin-bottom:0;
+}
+
+.nav-tabs > li.fancyTab:last-child a {
+  border-right: 1px solid transparent;
+}
+
+.nav-tabs > li.fancyTab.active:last-child {
+  border-right: 0px solid #ddd;
+	box-shadow: 0px 2px 0 0px #fff, 0px 0px 0 1px #ddd;
+}
+
+.fancyTab:last-child {
+  box-shadow: 0 0 0 1px #ddd;
+}
+
+.tabs .nav-tabs li.fancyTab.active a {
+	box-shadow:none;
+  top:0;
+}
+
+
+.fancyTab.active {
+  background: #fff;
+	box-shadow: 1px 1px 0 1px #fff, 0 0px 0 1px #ddd, -1px 1px 0 0px #ddd inset;
+  padding-bottom:30px;
+}
+
+.arrow-down {
+	display:none;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 22px solid #ddd;
+  position: absolute;
+  top: -1px;
+  left: calc(50% - 20px);
+}
+
+.arrow-down-inner {
+  width: 0;
+  height: 0;
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 12px solid #fff;
+  position: absolute;
+  top: -22px;
+  left: -18px;
+}
+
+.fancyTab.active .arrow-down {
+  display: block;
+}
+
+@media (max-width: 1200px) {
+  
+  .fancyTab .fa {
+  	font-size: 36px;
+  }
+  
+  .fancyTab .hidden-xs {
+    font-size:22px;
+	}
+		
+}
+	
+	
+@media (max-width: 992px) {
+    
+  .fancyTab .fa {
+  	font-size: 33px;
+  }
+    
+  .fancyTab .hidden-xs {
+  	font-size:18px;
+    font-weight:normal;
+  }
+		
+}
+	
+	
+@media (max-width: 768px) {
+    
+  .fancyTab > a {
+    font-size:18px;
+  }
+    
+  .nav > li.fancyTab > a {
+    padding:15px 0;
+    margin-bottom:inherit;
+  }
+    
+  .fancyTab .fa {
+    font-size:30px;
+  }
+    
+  .nav-tabs > li.fancyTab > a {
+    border-right:1px solid transparent;
+    padding-bottom:0;
+  }
+    
+  .fancyTab.active .fa {
+    color: #333;
+	}
+		
+}
+</style>
+
+
+
+  <div class="section-with-bg container">
+    <section id="fancyTabWidget" class="tabs t-tabs">
       <div class="section-header">
-        <h2>Sobre nós</h2>
+        <h2>Sobre Nós</h2>
       </div>
-
-      <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" href="#day-1" role="tab" data-toggle="tab">
-            <span class="fa fa-home"></span><br>
-            <span>BEM-VINDO</span>
-          </a>
+      <ul class="nav nav-tabs fancyTabs" role="tablist">
+        <li class="tab fancyTab">
+          <div class="arrow-down">
+            <div class="arrow-down-inner"></div>
+          </div>
+          <a id="tab2" href="#tabBody0" role="tab" aria-controls="tabBody0" aria-selected="true" data-toggle="tab"
+            tabindex="0"><span class="fa fa-home"></span><span class="hidden-xs">BEM-VINDO</span></a>
+          <div class="whiteBlock"></div>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">
-            <span class="fa fa-users"></span><br>
-            <span>RECEPÇÃO</span>
-          </a>
+        <li class="tab fancyTab">
+          <div class="arrow-down">
+            <div class="arrow-down-inner"></div>
+          </div>
+          <a id="tab3" href="#tabBody3" role="tab" aria-controls="tabBody3" aria-selected="true" data-toggle="tab"
+            tabindex="0"><span class="fa fa-coffee"></span><span class="hidden-xs">RECEPÇÃO</span></a>
+          <div class="whiteBlock"></div>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">
-            <span class="fa fa-university"></span><br>
-            <span>CONSULTÓRIOS</span>
-          </a>
+        <li class="tab fancyTab">
+          <div class="arrow-down">
+            <div class="arrow-down-inner"></div>
+          </div>
+          <a id="tab4" href="#tabBody4" role="tab" aria-controls="tabBody4" aria-selected="true" data-toggle="tab"
+            tabindex="0"><span class="fa fa-hospital-o"></span><span class="hidden-xs">CONSULTÓRIOS</span></a>
+          <div class="whiteBlock"></div>
         </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="#day-4" role="tab" data-toggle="tab">
-            <span class="fa fa-map-marker"></span><br>
-            <span>LOCALIZAÇÃO</span>
-          </a>
+        <li class="tab fancyTab">
+          <div class="arrow-down">
+            <div class="arrow-down-inner"></div>
+          </div>
+          <a id="tab5" href="#tabBody5" role="tab" aria-controls="tabBody5" aria-selected="true" data-toggle="tab"
+            tabindex="0"><span class="fa fa-map-marker"></span><span class="hidden-xs">LOCALIZAÇÃO</span></a>
+          <div class="whiteBlock"></div>
         </li>
       </ul>
+      <div id="myTabContent" class="tab-content fancyTabContent" aria-live="polite">
+        <div class="tab-pane  fade active in" id="tabBody0" role="tabpanel" aria-labelledby="tab0" aria-hidden="false"
+          tabindex="0">
+          <div>
+            <div class="row">
 
-      <div class="tab-content row justify-content-center">
-        <!-- Sessão Bem-Vindo -->
-        <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
-          <div class="row schedule-item">
-            <div class="col-md-12">
-              <h4>Bem-vindo à Magni Consultórios</h4><br>
-              <p style="text-align: justify">&nbsp;&nbsp;&nbsp;&nbsp;A Magni Consultórios é uma clínica que atua no
-                modelo de coworking voltado para saúde, no qual os consultórios são individualizados e a infraestrutura
-                é compartilhada com profissionais da área.<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;Aqui, trazemos a você todo o apoio administrativo e burocrático necessário, com
-                o intuito de
-                proporcionar mais comodidade e permitir que você consiga direcionar sua atenção aos seus atendimentos.<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;Além disso, como o consultório será reservado apenas para o período da
-                consulta, o investimento financeiro necessário será proporcional ao tempo que usufruir, oportunizando
-                maior economia e flexibilidade de horários.<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;E tem mais: não cobramos porcentagem sobre o atendimento, sendo o profissional
-                livre para estipular o
-                valor que deseja em suas consultas.<br><br>
-                <div class="agendeSuaVisita" style="text-align: center;">
-                  <b>AGENDE SUA VISITA!</b><br>
-                  <span class="fa fa-phone"></span><a href="tel:04899622-2498"> 99622-2498 </a> -
-                  <span class="fa fa-whatsapp"></span><a href="https://wa.me/5548999895997"> Whatsapp</a>
-                </div>
+              <div class="col-md-12">
+                <h4 style="color:#0cb2cc;font-size:20px;padding:10px;">Bem-vindo à Magni Consultórios</h4><br>
+                <p style="text-align: justify;color:#878787;">&nbsp;&nbsp;&nbsp;&nbsp;A Magni Consultórios é uma clínica que atua no
+                  modelo de coworking voltado para saúde, no qual os consultórios são individualizados e a
+                  infraestrutura
+                  é compartilhada com profissionais da área.<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;Aqui, proporcionamos a você todo o apoio administrativo e burocrático necessário,
+                  com
+                  o intuito de
+                  proporcionar mais comodidade e permitir que você consiga direcionar sua atenção aos seus
+                  atendimentos.<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;Além disso, como o consultório será reservado apenas para o período da
+                  consulta, o investimento
+                  financeiro necessário será proporcional ao tempo que usufruir, oportunizando maior economia e
+                  flexibilidade de horários.<br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;E tem mais: não cobramos porcentagem sobre o atendimento, sendo o
+                  profissional
+                  livre para estipular o
+                  valor que deseja em suas consultas.<br><br>
+
+                  <div class="agendeSuaVisita" style="text-align: center;">
+                    <b>AGENDE SUA VISITA!</b><br>
+                    <span class="fa fa-phone"></span><a href="tel:04899622-2498"> 99622-2498 </a> -
+                    <span class="fa fa-whatsapp"></span><a href="https://wa.me/5548999895997"> Whatsapp</a>
+                  </div>
+              </div>
+
             </div>
           </div>
         </div>
+        <div class="tab-pane  fade" id="tabBody1" role="tabpanel" aria-labelledby="tab1" aria-hidden="true" tabindex="0">
+          <div class="row">
 
-        <!-- Sessão Recepção -->
-        <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
-          <div class="row schedule-item">
             <div class="col-md-12">
-              <h4>Recepção</h4><br>
-              <p style="text-align: justify">&nbsp;&nbsp;&nbsp;&nbsp;Para recepcionarmos os clientes, criamos um
+              <h2>This is the content of tab two.</h2>
+              <p>This field is a rich HTML field with a content editor like others used in Sitefinity. It accepts
+                images, video, tables, text, etc. Street art polaroid microdosing la croix taxidermy. Jean shorts
+                kinfolk distillery lumbersexual pinterest XOXO semiotics. Tilde meggings asymmetrical literally pork
+                belly, heirloom food truck YOLO. Meh echo park lyft typewriter. </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane  fade" id="tabBody2" role="tabpanel" aria-labelledby="tab2" aria-hidden="true" tabindex="0">
+          <div class="row">
+            <div class="col-md-12">
+              <h2>This is the content of tab three.</h2>
+              <p>This field is a rich HTML field with a content editor like others used in Sitefinity. It accepts
+                images, video, tables, text, etc. Street art polaroid microdosing la croix taxidermy. Jean shorts
+                kinfolk distillery lumbersexual pinterest XOXO semiotics. Tilde meggings asymmetrical literally pork
+                belly, heirloom food truck YOLO. Meh echo park lyft typewriter. </p>
+
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane  fade" id="tabBody3" role="tabpanel" aria-labelledby="tab3" aria-hidden="true" tabindex="0">
+          <div class="row">
+            <div class="col-md-12">
+              <h4 style="color:#0cb2cc;font-size:20px;padding:10px;">Recepção</h4><br>
+              <p style="text-align: justify;color:#878787;">&nbsp;&nbsp;&nbsp;&nbsp;Para recepcionarmos os clientes, criamos um
                 ambiente confortável e
                 aconchegante com poltronas, televisão e acesso à internet, além de servirmos café, água e bala.<br>
                 &nbsp;&nbsp;&nbsp;&nbsp;Além desse espaço, oferecemos facilidade para nossos clientes através de uma
@@ -137,34 +431,36 @@
                     </a>
                   </div>
                 </section>
+
                 <div class="agendeSuaVisita" style="text-align: center;">
                   <b>AGENDE SUA VISITA!</b><br>
                   <span class="fa fa-phone"></span><a href="tel:04899622-2498"> 99622-2498 </a> -
                   <span class="fa fa-whatsapp"></span><a href="https://wa.me/5548999895997"> Whatsapp</a>
               </p>
             </div>
+
           </div>
         </div>
       </div>
-
-      <!-- Sessão Consultórios -->
-      <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
-        <div class="row schedule-item">
+      <div class="tab-pane  fade" id="tabBody4" role="tabpanel" aria-labelledby="tab4" aria-hidden="true" tabindex="0">
+        <div class="row">
           <div class="col-md-12">
-            <h4>Consultórios</h4><br>
-            <p style="text-align: justify">&nbsp;&nbsp;&nbsp;&nbsp;Nossos consultórios são decorados e equipados
-              conforme a necessidade e conforto do nosso cliente. Oferecemos maca reclinável, com regulação de altura e
-              apoio de cabeça, mesa, cadeiras, pia com acionamento por pedal, armazenamento e descarte de lixo
-              infectante e perfurocortante, ar-condicionado, luminaria led com lente de aumento, mocho, entre outros…</p>
+            <h4 style="color:#0cb2cc;font-size:20px;padding:10px;">Consultórios</h4><br>
+            <p style="text-align: justify;color:#878787;">&nbsp;&nbsp;&nbsp;&nbsp;Nossos consultórios são decorados e equipados
+              conforme
+              a necessidade e
+              conforto do nosso cliente. Oferecemos maca reclinável, com regulação de altura e apoio de cabeça, mesa,
+              cadeiras, pia com acionamento por pedal, armazenamento e descarte de lixo infectante e perfurocortante,
+              ar- condicionado, luminaria led com lente de aumento, mocho, entre outros…</p>
 
             <section id="gallery" class="wow fadeInUp">
               <div class="owl-carousel gallery-carousel">
-                <a href="img/salas/consultorio-magni-consultorio-1.jpeg" class="venobox" data-gall="gallery-carousel">
-                  <p style="text-align: center">Sala 1</p><img style="height: 220px;" src="img/salas/consultorio-magni-consultorio-1.jpeg"
+                <a href="img/salas/consultorio1a.jpeg" class="venobox" data-gall="gallery-carousel">
+                  <p style="text-align: center">Sala 1</p><img style="height: 220px;" src="img/salas/consultorio1a.jpeg"
                     alt="">
                 </a>
-                <a href="img/salas/consultorio-magni-consultorio-2.jpeg" class="venobox" data-gall="gallery-carousel">
-                  <p style="text-align: center">Sala 1</p><img style="height: 220px;" src="img/salas/consultorio-magni-consultorio-2.jpeg"
+                <a href="img/salas/consultorio1b.jpeg" class="venobox" data-gall="gallery-carousel">
+                  <p style="text-align: center">Sala 1</p><img style="height: 220px;" src="img/salas/consultorio1b.jpeg"
                     alt="">
                 </a>
                 <a href="img/salas/consultorio2a.jpeg" class="venobox" data-gall="gallery-carousel">
@@ -185,24 +481,28 @@
                 </a>
               </div>
             </section>
+
             <div class="agendeSuaVisita" style="text-align: center;">
               <b>AGENDE SUA VISITA!</b><br>
               <span class="fa fa-phone"></span><a href="tel:04899622-2498"> 99622-2498 </a> -
               <span class="fa fa-whatsapp"></span><a href="https://wa.me/5548999895997"> Whatsapp</a> </p>
             </div>
+
+
           </div>
         </div>
       </div>
-
-      <!-- Sessão Localização Previlegiada -->
-      <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-4">
-        <div class="row schedule-item">
+      <div class="tab-pane  fade" id="tabBody5" role="tabpanel" aria-labelledby="tab5" aria-hidden="true" tabindex="0">
+        <div class="row">
           <div class="col-md-12">
-            <h4>Localização previlegiada</h4><br>
-            <p style="text-align: justify">&nbsp;&nbsp;&nbsp;&nbsp;A localização é privilegiada!<br><br>
+            <h4 style="color:#0cb2cc;font-size:20px;padding:10px;">Localização previlegiada</h4><br>
+            <p style="text-align: justify;color:#878787;">&nbsp;&nbsp;&nbsp;&nbsp;A localização é privilegiada!<br><br>
+
               &nbsp;&nbsp;&nbsp;&nbsp;Nosso espaço encontra-se no coração do centro de Florianópolis. Para chegar à
-              Magni Consultórios, há duas opções de acesso: pelo calçadão da rua Conselheiro Mafra ou pela rua Felipe
-              Schimidt. O edifício é conhecido como Centro Comercial ARS, número 249, 12º andar, na sala 1210.<br>
+              Magni
+              Consultórios, há duas opções de acesso: pelo calçadão da rua Conselheiro Mafra ou pela rua Felipe
+              Schimidt.
+              O edifício é conhecido como Centro Comercial ARS, número 249, 12º andar, na sala 1210.<br>
               &nbsp;&nbsp;&nbsp;&nbsp;Nós temos uma linda vista para o mar e para as pontes que ligam Florianópolis
               continente/ilha.
             </p>
@@ -221,6 +521,7 @@
               </div>
             </section>
 
+
             <section id="venue" class="wow fadeInUp">
               <div class="container-fluid">
                 <div class="row no-gutters">
@@ -231,17 +532,20 @@
                 </div>
               </div>
             </section>
+
             <div class="agendeSuaVisita" style="text-align: center;">
               <b>AGENDE SUA VISITA!</b><br>
               <span class="fa fa-phone"></span><a href="tel:04899622-2498"> 99622-2498 </a> -
               <span class="fa fa-whatsapp"></span><a href="https://wa.me/5548999895997"> Whatsapp</a> </p>
             </div>
+
           </div>
         </div>
       </div>
-    </div>
-    </div>
+  </div>
+
   </section>
+  </div>
 
   <!-- <section class="section-with-bg wow fadeInUp">
     <div class="container">
@@ -328,8 +632,7 @@
         <div class="col-lg-5">
           <div class="card mb-3 mb-sm-0">
             <div class="card-body">
-              <h5 style="color:#f82249 !important;" class="card-title text-muted text-uppercase text-center">Hora
-                Avulsa</h5>
+              <h5 class="card-title text-muted text-uppercase text-center">Hora Avulsa</h5>
               <h6 class="card-price text-center">R$40,00/hora</h6>
               <hr>
               <ul class="fa-ul">
@@ -376,8 +679,7 @@
         <div class="col-lg-5">
           <div class="card mb-5 mb-lg-0">
             <div class="card-body">
-              <h5 style="color:#f82249 !important;" class="card-title text-muted text-uppercase text-center">Pacote 10
-                horas mensal</h5>
+              <h5 class="card-title text-muted text-uppercase text-center">Pacote 10 horas mensal</h5>
               <h6 class="card-price text-center">R$300,00/mês</h6>
               <hr>
               <ul class="fa-ul">
@@ -420,16 +722,51 @@
           </div>
         </div>
       </div>
+
+      <!-- Modal Order Form -->
+      <!-- <div id="buy-ticket-modal" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Buy Tickets</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="POST" action="#">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                  <select id="ticket-type" name="ticket-type" class="form-control">
+                    <option value="">-- Select Your Ticket Type --</option>
+                    <option value="standard-access">Standard Access</option>
+                    <option value="pro-access">Pro Access</option>
+                    <option value="premium-access">Premium Access</option>
+                  </select>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn">Buy Now</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div> -->
   </section>
 
   <section style="padding: 0px;" id="buy-tickets" class="section-with-bg wow fadeInUp">
     <div class="container">
       <div class="tabelapreco2">
+
         <div class="col-lg-4">
           <div class="card">
             <div class="card-body">
-              <h5 style="color:#f82249 !important;" class="card-title text-muted text-uppercase text-center">Período
-                mensal</h5>
+              <h5 class="card-title text-muted text-uppercase text-center">Período mensal</h5>
               <h6 class="card-price text-center">R$330/mês</h6>
               <hr>
               <ul class="fa-ul">
@@ -460,6 +797,7 @@
                 <li><span class="fa-li"></span>
                   <p style="font-size:10px;">* Acréscimo de R$50,00, caso utilize lixo infectante/perfurante</p>
                 </li>
+
               </ul>
               <hr>
               <div class="text-center">
@@ -475,8 +813,7 @@
         <div class="col-lg-4">
           <div class="card">
             <div class="card-body">
-              <h5 style="color:#f82249 !important;" class="card-title text-muted text-uppercase text-center">Período
-                Trimestral</h5>
+              <h5 class="card-title text-muted text-uppercase text-center">Período Trimestral</h5>
               <h6 class="card-price text-center">R$310/mês</h6>
               <hr>
               <ul class="fa-ul">
@@ -522,8 +859,7 @@
         <div class="col-lg-4">
           <div class="card">
             <div class="card-body">
-              <h5 style="color:#f82249 !important;" class="card-title text-muted text-uppercase text-center">Período
-                Semestral</h5>
+              <h5 class="card-title text-muted text-uppercase text-center">Período Semestral</h5>
               <h6 class="card-price text-center">R$290/mês</h6>
               <hr>
               <ul class="fa-ul">
@@ -560,6 +896,41 @@
                 <button type="button" class="btn" data-ticket-type="standard-access"><a style="color:#fff;" href="https://wa.me/5548999895997">
                     Contratar</a></button>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal Order Form -->
+      <div id="buy-ticket-modal" class="modal fade">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Buy Tickets</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form method="POST" action="#">
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-name" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="your-email" placeholder="Your Email">
+                </div>
+                <div class="form-group">
+                  <select id="ticket-type" name="ticket-type" class="form-control">
+                    <option value="">-- Select Your Ticket Type --</option>
+                    <option value="standard-access">Standard Access</option>
+                    <option value="pro-access">Pro Access</option>
+                    <option value="premium-access">Premium Access</option>
+                  </select>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn">Buy Now</button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -632,49 +1003,54 @@
         <div class="row">
 
           <div class="col-lg-4 col-md-6 footer-info">
-            <img src="img/logo.png" alt="Magni-consultórios-logo">
-            <p style="text-align: justify;font-family: 'Open Sans', sans-serif;">A Magni Consultórios é uma clínica que
-              atua no modelo de coworking voltado para saúde, no qual os consultórios são individualizados e a
-              infraestrutura é compartilhada com profissionais da área.</p>
+            <img src="img/logo.png" alt="TheEvenet">
+            <p style="text-align: justify">A Magni Consultórios é uma clínica que atua no
+              modelo de coworking voltado para saúde, no qual os consultórios são individualizados e a infraestrutura
+              é compartilhada com profissionais da área.</p>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-links">
-            <h4 style="font-family: 'Open Sans', sans-serif;">Links</h4>
+            <h4>Links</h4>
             <ul>
-              <li>
-                <i class="fa fa-angle-right"></i>
-                <a style="font-family: 'Open Sans', sans-serif;" href="#">Home</a>
-              </li>
-
-              <li>
-                <i class="fa fa-angle-right"></i>
-                <a style="font-family: 'Open Sans', sans-serif;" href="#schedule">Sobre Nós</a>
-              </li>
-
-              <li>
-                <i class="fa fa-angle-right"></i>
-                <a style="font-family: 'Open Sans', sans-serif;" href="#buy-tickets">Nossos Planos</a>
-              </li>
-
-              <li>
-                <i class="fa fa-angle-right"></i>
-                <a style="font-family: 'Open Sans', sans-serif;" href="#buy-tickets">Depoimentos</a>
-              </li>
+              <li><i class="fa fa-angle-right"></i> <a href="#">Home</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#schedule">Sobre Nós</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#buy-tickets">Nossos Planos</a></li>
+              <li><i class="fa fa-angle-right"></i> <a href="#buy-tickets">Depoimentos</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-contact">
-            <h4 style="font-family: 'Open Sans', sans-serif;">Contatos</h4>
-            <p style="font-family: 'Open Sans', sans-serif;">
-              Centro de Florianópolis Rua Felipe Schimidt, 249 Sala 1210 - 12° andar<br>
+            <h4>Contatos</h4>
+            <p>
+              Rua Felipe Schimidt <br>
+              Centro - 249<br>
+              12° Andar - Sala 1210 <br>
               <strong>Telefone:</strong> (48)99989-5997<br>
               <strong>Email:</strong> magniconsultorios@gmail.com<br>
             </p>
+
             <div class="social-links">
-              <a href="https://www.instagram.com/magniconsultorios/" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
               <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
+
           </div>
+          <!-- <div class="col-lg-3 col-md-6 footer-contact">
+            <section>
+              <div class="container-fluid">
+                <div class="row no-gutters">
+                  <div class="col-lg-12 venue-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.9039913225065!2d-48.55464258437081!3d-27.596506028715982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95273824752d59eb%3A0xcda05ed179e2bbb0!2sR.%20Felipe%20Schmidt%2C%20249%20-%20Centro%2C%20Florian%C3%B3polis%20-%20SC%2C%2088010-000!5e0!3m2!1spt-BR!2sbr!4v1571262489917!5m2!1spt-BR!2sbr"
+                      width="600" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div> -->
+
         </div>
       </div>
     </div>
@@ -684,10 +1060,12 @@
         &copy; Copyright <strong>Magni Consultórios</strong>. Todos os direitos reservados
       </div>
       <div class="credits">
+
         Criado por <a href="#">Rafael Santos</a>
       </div>
     </div>
   </footer>
+
 
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
   <script src="lib/jquery/jquery.min.js"></script>
@@ -700,9 +1078,6 @@
   <script src="lib/venobox/venobox.min.js"></script>
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="js/flickity.pkgd.min.js"></script>
-  <script src="contactform/contactform.js"></script>
-  <script src="js/main.js"></script>
-
   <script>
     var flkty = new Flickity('.main-gallery', {
       cellAlign: 'left',
@@ -710,6 +1085,62 @@
       wrapAround: true,
       prevNextButtons: false,
       autoPlay: 5000
+    });
+  </script>
+
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      var numItems = $('li.fancyTab').length;
+      if (numItems == 12) {
+        $("li.fancyTab").width('8.3%');
+      }
+      if (numItems == 11) {
+        $("li.fancyTab").width('9%');
+      }
+      if (numItems == 10) {
+        $("li.fancyTab").width('10%');
+      }
+      if (numItems == 9) {
+        $("li.fancyTab").width('11.1%');
+      }
+      if (numItems == 8) {
+        $("li.fancyTab").width('12.5%');
+      }
+      if (numItems == 7) {
+        $("li.fancyTab").width('14.2%');
+      }
+      if (numItems == 6) {
+        $("li.fancyTab").width('16.666666666666667%');
+      }
+      if (numItems == 5) {
+        $("li.fancyTab").width('20%');
+      }
+      if (numItems == 4) {
+        $("li.fancyTab").width('25%');
+      }
+      if (numItems == 3) {
+        $("li.fancyTab").width('33.3%');
+      }
+      if (numItems == 2) {
+        $("li.fancyTab").width('50%');
+      }
+    });
+
+    $(window).load(function () {
+      $('.fancyTabs').each(function () {
+        var highestBox = 0;
+        $('.fancyTab a', this).each(function () {
+          if ($(this).height() > highestBox)
+            highestBox = $(this).height();
+        });
+        $('.fancyTab a', this).height(highestBox);
+      });
     });
   </script>
 </body>
