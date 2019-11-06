@@ -12,6 +12,13 @@
 
 /*iphone 6 7 e 8 plus*/
 @media (max-width: 414px) {
+	.cbp .cbp-item {
+		z-index: 2;
+		display: block;
+		width: 240px; /* default width for blocks */
+		height: 250px; /* default height for blocks */
+	}
+
 	.tabelapreco {
 	  margin-left:1px;
 	}
@@ -870,6 +877,7 @@ p.lead-footer {
 .form-wrapper h3.panel-title {
   font-size: 20px;
   font-weight: 700;
+
 }
 
 .form-wrapper h3.panel-title span {
@@ -1074,7 +1082,6 @@ Elements
 
 .cbp-filter-item {
 	border-radius: 3px;
-	border:1px solid red;
 }
 .cbp-l-filters-alignLeft .cbp-filter-item {
     font: 600 12px/29px "Open Sans", sans-serif;

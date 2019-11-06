@@ -40,7 +40,8 @@
   <section id="intro">
     <!-- Nessa sessão está a imagem principal do site -->
     <title>Magni Consultórios</title>
-    <p style="color:white;font-size:1px;">Locação de consultório; sublocaçao de consultorio; coworking em saude; consultórios
+    <p style="color:white;font-size:1px;">Locação de consultório; sublocaçao de consultorio; coworking em saude;
+      consultórios
       compartilhados; espaço de saude para locaçao.</p>
   </section>
 
@@ -91,13 +92,16 @@
               <p style="text-align: justify;text-indent: 1.5em">A Magni Consultórios é uma clínica que atua no
                 modelo de coworking voltado para saúde, no qual os consultórios são individualizados e a infraestrutura
                 é compartilhada com profissionais da área.
-                <p style="text-align: justify;text-indent: 1.5em">Aqui, proporcionamos a você todo o apoio administrativo e burocrático
+                <p style="text-align: justify;text-indent: 1.5em">Aqui, proporcionamos a você todo o apoio
+                  administrativo e burocrático
                   necessário, com o intuito de proporcionar mais comodidade e permitir que você consiga direcionar sua
                   atenção aos seus atendimentos.</p>
-                <p style="text-align: justify;text-indent: 1.5em">Além disso, como o consultório será reservado apenas para o período da consulta, o investimento
+                <p style="text-align: justify;text-indent: 1.5em">Além disso, como o consultório será reservado apenas
+                  para o período da consulta, o investimento
                   financeiro necessário será proporcional ao tempo que usufruir, oportunizando
                   maior economia e flexibilidade de horários.</p>
-                <p style="text-align: justify;text-indent: 1.5em">E tem mais: não cobramos porcentagem sobre o atendimento, sendo o profissional livre para estipular
+                <p style="text-align: justify;text-indent: 1.5em">E tem mais: não cobramos porcentagem sobre o
+                  atendimento, sendo o profissional livre para estipular
                   o valor que deseja em suas consultas.</p>
                 <div class="agendeSuaVisita" style="text-align: center;">
                   <b>AGENDE SUA VISITA!</b><br>
@@ -114,14 +118,16 @@
             <div class="col-md-12">
               <h4>Recepção</h4><br>
               <p style="text-align: justify;text-indent: 1.5em">Para recepcionarmos os clientes, criamos um
-                ambiente confortável e aconchegante com poltronas, televisão e acesso à internet, além de servirmos café, água e bala.
-                <p style="text-align: justify;text-indent: 1.5em">Além desse espaço, oferecemos facilidade para nossos clientes através de uma
-                recepcionista para administração de:</p><br> 
+                ambiente confortável e aconchegante com poltronas, televisão e acesso à internet, além de servirmos
+                café, água e bala.
+                <p style="text-align: justify;text-indent: 1.5em">Além desse espaço, oferecemos facilidade para nossos
+                  clientes através de uma
+                  recepcionista para administração de:</p><br>
 
                 <p><b>HORÁRIOS:</b> Marcamos o horário dos nossos clientes conforme o consultório solicitado.</p>
                 <p><b>AGENDA:</b> Confirmamos todos os seus pacientes 24 horas antes da consulta.</p>
                 <p><b>COBRANÇA:</b> A cobrança das consultas é realizada na recepção. No final do período, entregamos
-                relatório do dia e o valor recebido.</p>
+                  relatório do dia e o valor recebido.</p>
 
                 <section id="gallery" class="wow fadeInUp">
                   <div class="owl-carousel gallery-carousel">
@@ -199,11 +205,13 @@
           <div class="col-md-12">
             <h4>Localização previlegiada</h4><br>
             <p style="text-align: justify;text-indent: 1.5em">A localização é privilegiada!
-              <p style="text-align: justify;text-indent: 1.5em">Nosso espaço encontra-se no coração do centro de Florianópolis. Para chegar à
-              Magni Consultórios, há duas opções de acesso: pelo calçadão da rua Conselheiro Mafra ou pela rua Felipe
-              Schimidt. O edifício é conhecido como Centro Comercial ARS, número 249, 12º andar, na sala 1210.</p>
-              <p style="text-align: justify;text-indent: 1.5em">Nós temos uma linda vista para o mar e para as pontes que ligam Florianópolis
-              continente/ilha.</p>
+              <p style="text-align: justify;text-indent: 1.5em">Nosso espaço encontra-se no coração do centro de
+                Florianópolis. Para chegar à
+                Magni Consultórios, há duas opções de acesso: pelo calçadão da rua Conselheiro Mafra ou pela rua Felipe
+                Schimidt. O edifício é conhecido como Centro Comercial ARS, número 249, 12º andar, na sala 1210.</p>
+              <p style="text-align: justify;text-indent: 1.5em">Nós temos uma linda vista para o mar e para as pontes
+                que ligam Florianópolis
+                continente/ilha.</p>
             </p>
 
             <section id="gallery" class="wow fadeInUp">
@@ -712,6 +720,27 @@
       prevNextButtons: false,
       autoPlay: 5000
     });
+  </script>
+
+  <script>
+    const pics = document.querySelector(".testimonial-pics");
+    const textFull = document.querySelector(".testimonial-contents");
+
+    for (pic of pics.children) {
+      pic.addEventListener("click", function () {
+        for (elem of pics.children) {
+          elem.classList.remove("active");
+        }
+        this.classList.add("active");
+
+        const current = Number(this.getAttribute("id"));
+
+        for (text of textFull.children) {
+          text.classList.remove("active");
+        }
+        textFull.children[current].classList.add("active");
+      });
+    }
   </script>
 </body>
 
