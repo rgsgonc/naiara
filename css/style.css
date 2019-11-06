@@ -2249,7 +2249,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     /*botoes do bem-vindo, consultorios etc*/
     display: inline-block;
     margin-bottom: 0;
-    width: 300px;
+    width: 300px !important;
     padding: 10px;
   }
 
