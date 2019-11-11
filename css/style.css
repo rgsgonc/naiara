@@ -1803,6 +1803,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*Ipad Pro*/
 @media (max-width: 1198px) {
+  .imgDetalheProfissional{
+    width: 350px;
+    /* margin-left: 20px; */
+    padding: 20px;
+  }
+  
   .fotoProfissionais{
     height: 300px;
     padding-left: 20px;
@@ -1844,13 +1850,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     height: 460px;
   }
 
-  /* .Services-tab{
-    margin-top:20px;
-    width: 400px !important;
-    font-size: 16px;
-    text-align: center;
-  } */
-
   #footer .footer-top {
     /*footer*/
     background: #040919;
@@ -1869,8 +1868,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-/*Tela 1024*/
+/*IPAD PRO*/
 @media (max-width: 1024px) {
+  .imgDetalheProfissional{
+    width: 450px;
+    margin-left: 20px;
+    padding: 20px;
+  }
+  
   .fotoProfissionais{
     height: 300px;
     padding-left: 20px;
@@ -1996,6 +2001,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*iphone 6 7 e 8 plus*/
 @media (max-width: 414px) {
+  .imgDetalheProfissional{
+    width: 300px;
+    margin-left: 40px;
+    padding: 20px;
+  }
+  
   .fotoProfissionais{
     height: 200px;
     padding-left: 20px;
@@ -2080,6 +2091,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*iphone 6 7 e 8*/
 @media (max-width: 375px) {
+  .imgDetalheProfissional{
+    width: 300px;
+    margin-left: 20px;
+    padding: 20px;
+  }
+  
   .fotoProfissionais{
     height: 300px;
     padding-left: 75px !important;
@@ -2155,7 +2172,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-/*iphone Galaxy S5*/
+/*Galaxy S5*/
 @media (max-width: 375px) {
   .fotoProfissionais{
     height: 300px;
@@ -2218,6 +2235,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*iphone 5/SE*/
 @media (max-width: 320px) {
+  .imgDetalheProfissional{
+    width: 250px;
+    margin-left: 20px;
+    padding: 20px;
+  }
+  
   .fotoProfissionais{
     height: 300px;
     padding-left: 40px !important;
