@@ -5,7 +5,13 @@
 .fotoProfissionais{
   height: 300px;
   padding-left: 20px;
+  /* margin:auto; */
 }
+
+/* .fotoProfissionaisBeatriz{
+  height: 350px;
+  margin-top: -25px;
+} */
 
 .fotoProfissionaisThaisy{
   height: 250px;
@@ -750,6 +756,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 15px;
   margin-bottom: 10px;
   font-style: italic;
+  
 }
 
 #speakers .speaker .details .social {
@@ -1803,6 +1810,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*Ipad Pro*/
 @media (max-width: 1198px) {
+  
+  
   .imgDetalheProfissional{
     width: 350px;
     /* margin-left: 20px; */
@@ -1870,6 +1879,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*IPAD PRO*/
 @media (max-width: 1024px) {
+  /* .fotoProfissionaisBeatriz{
+    height: 350px;
+    margin-top: -25px;
+    margin-left: 15px;
+  } */
+
   .imgDetalheProfissional{
     width: 450px;
     margin-left: 20px;
@@ -1942,6 +1957,35 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*Ipad*/
 @media (max-width: 768px) {
+  #speakers-details .details h2 {
+    color: #0cb2cc;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #speakers-details .details h4 {
+    color: #0cb2cc;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .agendeSuaVisita{
+    text-align: center;
+    margin-left: 40px;
+  }
+
+  #speakers-details .details li {
+    color: #878787;
+    font-size: 18px;
+    margin-left: 70px;
+  }
+  
   .fotoProfissionais{
     height: 200px;
     padding-left: 40px;
@@ -2001,6 +2045,34 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*iphone 6 7 e 8 plus*/
 @media (max-width: 414px) {
+  #speakers-details .details h2 {
+    color: #0cb2cc;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #speakers-details .details h4 {
+    color: #0cb2cc;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #speakers-details .details li {
+    color: #878787;
+    font-size: 18px;
+    margin-left: 0px;
+  }
+
+  .agendeSuaVisita{
+    text-align: center;
+  }
+  
   .imgDetalheProfissional{
     width: 300px;
     margin-left: 40px;
