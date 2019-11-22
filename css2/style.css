@@ -222,7 +222,7 @@
   }
 
 
-/*iphone 6 7 e 8 plus*/
+/*iphone 6 7 e 8 plus (414x736)*/
 @media (max-width: 414px) {
 	.cbp .cbp-item {
 		z-index: 2;
@@ -230,6 +230,11 @@
 		width: 380px !important; /* default width for blocks */
 		height: 250px; /* default height for blocks */
 	}
+	
+	.agendeSuaVisita{
+		text-align: center;
+		margin:auto;
+  }
 
 	.fotoProfissionais{
 		height: 260px;

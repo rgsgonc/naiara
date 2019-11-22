@@ -480,7 +480,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 # Intro Section
 --------------------------------------------------------------*/
 
-#intro {
+/* #intro {
   width: 100%;
   height: 100vh;
   background: url(../img/fundo-principal.png) top center;
@@ -489,6 +489,16 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   height: 950px;
   background-repeat: no-repeat;
+} */
+
+#intro {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/fundo-principal.png) top center;
+  background-size: cover;
+  overflow: hidden;
+  height: 950px;
+  position: relative;
 }
 
 /* #intro {
@@ -2043,7 +2053,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-/*iphone 6 7 e 8 plus*/
+/*iphone 6 7 e 8 plus (414x736)*/
 @media (max-width: 414px) {
   #speakers-details .details h2 {
     color: #0cb2cc;
@@ -2093,7 +2103,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     width: 33px;
   }
 
-  #intro {
+  /* #intro {
     width: 100%;
     height: 100vh;
     background: url(../img/fundo-principal.png) top center;
@@ -2103,7 +2113,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     width: 414px;
     height: 400px;
     
-  }
+  } */
   
   .tabelapreco {
     margin-left:1px;
@@ -2161,7 +2171,217 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-/*iphone 6 7 e 8*/
+/*425x870*/
+@media (max-width: 425px) {
+  #speakers-details .details h2 {
+    color: #0cb2cc;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #speakers-details .details h4 {
+    color: #0cb2cc;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #speakers-details .details li {
+    color: #878787;
+    font-size: 18px;
+    margin-left: 0px;
+  }
+
+  .agendeSuaVisita{
+    text-align: center;
+  }
+  
+  .imgDetalheProfissional{
+    width: 300px;
+    margin-left: 40px;
+    padding: 20px;
+  }
+  
+  .fotoProfissionais{
+    height: 400px;
+    padding-left: 20px;
+  }
+
+  .fotoProfissionaisThaisy{
+    height: 180px;
+    padding-left: 1px;
+  }
+  
+  .iconesMenu {
+    width: 33px;
+  }
+
+  .tabelapreco {
+    margin-left:1px;
+  }
+
+  .tabelapreco2 {
+    margin-left:1px;
+    margin-top: -80px;
+  }
+
+  .espaco{
+    border:5px;
+  }
+
+  #schedule .nav-tabs {
+    text-align: center;
+    margin: auto;
+    display: block;
+    border-bottom: 0;
+    margin-bottom: 30px;
+    font-size:16px;
+    width: 420px !important;
+  }
+  
+  #schedule .nav-tabs li {
+    /*botoes do bem-vindo, consultorios etc*/
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 10px;
+    width: 400px !important;
+  }
+
+  .gallery-cell {
+    /*quadrado do depoimento*/
+    width: 100%;
+    height: 460px;
+  }
+
+  #footer .footer-top {
+    /*imagem da ponte que fica no footer*/
+    background: #040919;
+    padding: 60px 0 30px 0;
+    background-image: url('../img/ponte3.jpg'); 
+    background-size: 100%;
+    height: 820px; 
+  }
+
+  #buy-tickets .card {
+    /*tabela de preco*/
+    border-radius: 5px;
+    transition: all  0.3s ease-in-out;
+    box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+    width: 360px;
+  }
+}
+
+/*384x640*/
+@media (max-width: 384px) {
+  #speakers-details .details h2 {
+    color: #0cb2cc;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  #speakers-details .details h4 {
+    color: #0cb2cc;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  #speakers-details .details li {
+    color: #878787;
+    font-size: 18px;
+    margin-left: 0px;
+  }
+
+  .agendeSuaVisita{
+    text-align: center;
+  }
+  
+  .imgDetalheProfissional{
+    width: 300px;
+    margin-left: 40px;
+    padding: 20px;
+  }
+  
+  .fotoProfissionais{
+    height: 200px;
+    padding-left: 20px;
+  }
+
+  .fotoProfissionaisThaisy{
+    height: 180px;
+    padding-left: 1px;
+  }
+  
+  .iconesMenu {
+    width: 33px;
+  }
+
+  .tabelapreco {
+    margin-left:-20px;
+  }
+
+  .tabelapreco2 {
+    margin-left:-20px;
+    margin-top: -80px;
+  }
+
+  .espaco{
+    border:5px;
+  }
+
+  #schedule .nav-tabs {
+    text-align: center;
+    margin: auto;
+    display: block;
+    border-bottom: 0;
+    margin-bottom: 30px;
+    font-size:16px;
+    width: 420px !important;
+  }
+  
+  #schedule .nav-tabs li {
+    /*botoes do bem-vindo, consultorios etc*/
+    display: inline-block;
+    margin-bottom: 0;
+    padding: 10px;
+    width: 370px !important;
+  }
+
+  .gallery-cell {
+    /*quadrado do depoimento*/
+    width: 100%;
+    height: 460px;
+  }
+
+  #footer .footer-top {
+    /*imagem da ponte que fica no footer*/
+    background: #040919;
+    padding: 60px 0 30px 0;
+    background-image: url('../img/ponte3.jpg'); 
+    background-size: 100%;
+    height: 820px; 
+  }
+
+  #buy-tickets .card {
+    /*tabela de preco*/
+    border-radius: 5px;
+    transition: all  0.3s ease-in-out;
+    box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+    width: 360px;
+  }
+}
+
+/*iphone 6 7 e 8 (375x667)*/
 @media (max-width: 375px) {
   .imgDetalheProfissional{
     width: 300px;
@@ -2245,7 +2465,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /*Galaxy S5*/
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
   .fotoProfissionais{
     height: 300px;
     padding-left: 20px;
@@ -2274,7 +2494,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
   
   #schedule .nav-tabs li {
-    /*botoes do bem-vindo, consultorios etc*/
     display: inline-block;
     margin-bottom: 0;
     width: 340px;
@@ -2282,13 +2501,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   .gallery-cell {
-    /*quadrado do depoimento*/
     width: 100%;
     height: 460px;
   }
 
   #footer .footer-top {
-    /*footer imagem da ponte*/
     background: #040919;
     padding: 60px 0 30px 0;
     background-image: url('../img/ponte3.jpg'); 
@@ -2297,15 +2514,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 
   #buy-tickets .card {
-    /*tabela de preco*/
     border-radius: 5px;
     transition: all  0.3s ease-in-out;
     box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
     width: 310px;
   }
-}
+} */
 
-/*iphone 5/SE*/
+/*iphone 5/SE (320x568)*/
 @media (max-width: 320px) {
   .imgDetalheProfissional{
     width: 250px;
@@ -2316,6 +2532,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   .fotoProfissionais{
     height: 300px;
     padding-left: 40px !important;
+    margin: auto;
+    margin-top: auto;
   }
 
   .fotoProfissionaisThaisy{
