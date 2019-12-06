@@ -581,7 +581,7 @@ if(($adm==sim)||($admpi==sim)){
 			$ilha=$_POST["ilha"];
 			$pri=$_POST["pri"];
 
-			$sql = "INSERT INTO sups (matsup,nome_sup,ilha,pri,senha) VALUES ('$matricula','$nome','$ilha','$pri','$matricula')";
+			$sql = "INSERT INTO sups (matsup,nome_sup,ilha,pri,senha) VALUES ('$matricula','$nome','$ilha',1,'$matricula')";
 
 			if(mysqli_query($db,$sql)){
 
