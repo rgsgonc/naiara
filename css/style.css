@@ -3,21 +3,13 @@
 }
 
 .fotoProfissionais{
-  height: 300px;
-  padding-left: 20px;
-  /* margin:auto; */
+  height: 100%;
 }
 
-/* .fotoProfissionaisBeatriz{
-  height: 350px;
-  margin-top: -25px;
-} */
-
-.fotoProfissionaisThaisy{
-  height: 250px;
-  padding-left: 5px;
+.imgDetalheProfissional{
+  height: 100%;
+  width: 100%;
 }
-
 
 body {
   background: #fff;
@@ -1820,22 +1812,24 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*Ipad Pro*/
 @media (max-width: 1198px) {
-  
+  #intro {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fundo-principal-768-1024.png) top center;
+    background-size: cover;
+    overflow: hidden;
+    height: 1024px;
+    position: relative;
+  }
   
   .imgDetalheProfissional{
     width: 350px;
-    /* margin-left: 20px; */
     padding: 20px;
   }
   
   .fotoProfissionais{
     height: 300px;
     padding-left: 20px;
-  }
-
-  .fotoProfissionaisThaisy{
-    height: 250px;
-    padding-left: 5px;
   }
   
   .iconesMenu {
@@ -1887,13 +1881,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-/*IPAD PRO*/
+/*IPAD PRO 1024x1366*/
 @media (max-width: 1024px) {
-  /* .fotoProfissionaisBeatriz{
-    height: 350px;
-    margin-top: -25px;
-    margin-left: 15px;
-  } */
+  #intro {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fundo-principal-768-1024.png) top center;
+    background-size: cover;
+    overflow: hidden;
+    height: 1366px;
+    position: relative;
+  }
 
   .imgDetalheProfissional{
     width: 450px;
@@ -1902,15 +1900,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
   
   .fotoProfissionais{
-    height: 300px;
-    padding-left: 20px;
+    /* height: 400px; */
+    /* width: 100%; */
+    /* padding-left: 30px !important; */
+    width: 100%;
+    height: 100%;
+    
+    /* background-color: white; */
   }
 
-  .fotoProfissionaisThaisy{
-    height: 250px;
-    padding-left: 5px;
-  }
-  
   .iconesMenu {
     width: 33px;
   }
@@ -1965,8 +1963,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-/*Ipad*/
+/*Ipad (768x1024)*/
 @media (max-width: 768px) {
+  #intro {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fundo-principal-768-1024.png) top center;
+    background-size: cover;
+    overflow: hidden;
+    height: 1024px;
+    position: relative;
+  }
+
   #speakers-details .details h2 {
     color: #0cb2cc;
     font-size: 28px;
@@ -1997,15 +2005,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
   
   .fotoProfissionais{
-    height: 200px;
-    padding-left: 40px;
+    /* height: 200px; */
+    width: 100%;
+    height: 100%;
+    /* background-color: white !important; */
+    
   }
 
-  .fotoProfissionaisThaisy{
-    height: 200px;
-    padding-left: 5px;
-  }
-  
   .iconesMenu {
     width: 33px;
   }
@@ -2055,6 +2061,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*iphone 6 7 e 8 plus (414x736)*/
 @media (max-width: 414px) {
+  #intro {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fundo-principal-768-1024.png) top center;
+    background-size: cover;
+    overflow: hidden;
+    height: 736px;
+    position: relative;
+  }
+
   #speakers-details .details h2 {
     color: #0cb2cc;
     font-size: 28px;
@@ -2094,26 +2110,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-left: 20px;
   }
 
-  .fotoProfissionaisThaisy{
-    height: 180px;
-    padding-left: 1px;
-  }
-  
   .iconesMenu {
     width: 33px;
   }
-
-  /* #intro {
-    width: 100%;
-    height: 100vh;
-    background: url(../img/fundo-principal.png) top center;
-    background-size: cover;
-    overflow: hidden;
-    position: relative;
-    width: 414px;
-    height: 400px;
-    
-  } */
   
   .tabelapreco {
     margin-left:1px;
@@ -2173,6 +2172,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*425x870*/
 @media (max-width: 425px) {
+  #intro {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fundo-principal-768-1024.png) top center;
+    background-size: cover;
+    overflow: hidden;
+    height: 1024px;
+    position: relative;
+  }
+
   #speakers-details .details h2 {
     color: #0cb2cc;
     font-size: 28px;
@@ -2210,11 +2219,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   .fotoProfissionais{
     height: 400px;
     padding-left: 20px;
-  }
-
-  .fotoProfissionaisThaisy{
-    height: 180px;
-    padding-left: 1px;
   }
   
   .iconesMenu {
@@ -2278,6 +2282,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*384x640*/
 @media (max-width: 384px) {
+  #intro {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fundo-principal-768-1024.png) top center;
+    background-size: cover;
+    overflow: hidden;
+    height: 640px;
+    position: relative;
+  }
+
   #speakers-details .details h2 {
     color: #0cb2cc;
     font-size: 28px;
@@ -2317,11 +2331,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-left: 20px;
   }
 
-  .fotoProfissionaisThaisy{
-    height: 180px;
-    padding-left: 1px;
-  }
-  
   .iconesMenu {
     width: 33px;
   }
@@ -2383,6 +2392,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*iphone 6 7 e 8 (375x667)*/
 @media (max-width: 375px) {
+  #intro {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fundo-principal-768-1024.png) top center;
+    background-size: cover;
+    overflow: hidden;
+    height: 667px;
+    position: relative;
+  }
+
   .imgDetalheProfissional{
     width: 300px;
     margin-left: 20px;
@@ -2392,11 +2411,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   .fotoProfissionais{
     height: 300px;
     padding-left: 75px !important;
-  }
-
-  .fotoProfissionaisThaisy{
-    height: 350px;
-    padding-left: 1px;
   }
   
   .iconesMenu {
@@ -2523,6 +2537,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 /*iphone 5/SE (320x568)*/
 @media (max-width: 320px) {
+  #intro {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/fundo-principal-768-1024.png) top center;
+    background-size: cover;
+    overflow: hidden;
+    height: 1024px;
+    position: relative;
+  }
+
   .imgDetalheProfissional{
     width: 250px;
     margin-left: 20px;
@@ -2534,11 +2558,6 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-left: 40px !important;
     margin: auto;
     margin-top: auto;
-  }
-
-  .fotoProfissionaisThaisy{
-    height: 250px;
-    padding-left: 20px;
   }
   
   .iconesMenu {

@@ -23,6 +23,141 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    /* .carousel {
+    margin-left: 15%;
+    margin-right: 15%;
+} */
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+ul.slides input {
+    display: none; 
+}
+
+
+.slide-container { 
+    display: block; 
+}
+
+.slide-image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}   
+
+.slide-image img {
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 100px;
+    line-height: 600px;
+    color: #fff;
+}
+
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+    opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+}
+
+.carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+     display: block; 
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+	opacity: 1;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }
+
+  </style>
+
+
 </head>
 
 <body onload="clica()">
@@ -42,7 +177,8 @@
     <title>Magni Consultórios</title>
     <p style="color:white;font-size:1px;">Locação de consultório; sublocaçao de consultorio; coworking em saude;
       consultórios compartilhados; espaço de saude para locaçao.</p>
-      <p style="color:white;font-size:1px;">Magni Consultórios - coworking em saúde florianópolis - coworking em saúde floripa</p>
+    <p style="color:white;font-size:1px;">Magni Consultórios - coworking em saúde florianópolis - coworking em saúde
+      floripa</p>
   </section>
 
   <section id="schedule" class="section-with-bg">
@@ -129,19 +265,60 @@
                 <p><b>COBRANÇA:</b> A cobrança das consultas é realizada na recepção. No final do período, entregamos
                   relatório do dia e o valor recebido.</p>
 
-                <section id="gallery" class="wow fadeInUp">
-                  <div class="owl-carousel gallery-carousel">
-                    <a href="img/salas/recepcao1.jpeg" class="venobox" data-gall="gallery-carousel">
-                      <p style="text-align: center"></p><img style="height: 220px;" src="img/salas/recepcao1.jpeg" alt="">
-                    </a>
-                    <a href="img/salas/recepcao2.jpeg" class="venobox" data-gall="gallery-carousel">
-                      <p style="text-align: center"></p><img style="height: 220px;" src="img/salas/recepcao2.jpeg" alt="">
-                    </a>
-                    <a href="img/salas/recepcao3.jpeg" class="venobox" data-gall="gallery-carousel">
-                      <p style="text-align: center"></p><img style="height: 220px;" src="img/salas/recepcao3.jpeg" alt="">
-                    </a>
+                <div>
+                  <div class="carousel">
+                    <ul class="slides">
+                      <input type="radio" name="radio-buttons" id="img-1" checked />
+                      <li class="slide-container">
+                        <div class="slide-image">
+                          <img src="img/salas/recepcao1.jpeg">
+                        </div>
+                        <div class="carousel-controls">
+                          <label for="img-3" class="prev-slide">
+                            <span>&lsaquo;</span>
+                          </label>
+                          <label for="img-2" class="next-slide">
+                            <span>&rsaquo;</span>
+                          </label>
+                        </div>
+                      </li>
+                      <input type="radio" name="radio-buttons" id="img-2" />
+                      <li class="slide-container">
+                        <div class="slide-image">
+                          <img src="img/salas/recepcao2.jpeg">
+                        </div>
+                        <div class="carousel-controls">
+                          <label for="img-1" class="prev-slide">
+                            <span>&lsaquo;</span>
+                          </label>
+                          <label for="img-3" class="next-slide">
+                            <span>&rsaquo;</span>
+                          </label>
+                        </div>
+                      </li>
+                      <input type="radio" name="radio-buttons" id="img-3" />
+                      <li class="slide-container">
+                        <div class="slide-image">
+                          <img src="img/salas/recepcao3.jpeg">
+                        </div>
+                        <div class="carousel-controls">
+                          <label for="img-2" class="prev-slide">
+                            <span>&lsaquo;</span>
+                          </label>
+                          <label for="img-1" class="next-slide">
+                            <span>&rsaquo;</span>
+                          </label>
+                        </div>
+                      </li>
+                      <div class="carousel-dots">
+                        <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                        <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                        <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                      </div>
+                    </ul>
                   </div>
-                </section>
+                </div>
+
                 <div class="agendeSuaVisita" style="text-align: center;">
                   <b>AGENDE SUA VISITA!</b><br>
                   <span class="fa fa-phone"></span><a href="tel:048999895997"> 99989-5997 </a> -
@@ -162,7 +339,7 @@
               apoio de cabeça, mesa, cadeiras, pia com acionamento por pedal, armazenamento e descarte de lixo
               infectante e perfurocortante, ar-condicionado, luminaria led com lente de aumento, mocho, entre outros…</p>
 
-            <section id="gallery" class="wow fadeInUp">
+            <!-- <section id="gallery" class="wow fadeInUp">
               <div class="owl-carousel gallery-carousel">
                 <a href="img/salas/consultorio-magni-consultorio-1.jpeg" class="venobox" data-gall="gallery-carousel">
                   <p style="text-align: center">Sala 1</p><img style="height: 220px;" src="img/salas/consultorio-magni-consultorio-1.jpeg"
@@ -189,7 +366,113 @@
                     alt="">
                 </a>
               </div>
-            </section>
+            </section> -->
+
+            <div>
+                <div class="carousel">
+                  <ul class="slides">
+                    <input type="radio" name="radio-buttons" id="img-1" checked />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="img/salas/consultorio-magni-consultorio-1.jpeg">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-6" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-2" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-2" />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="img/salas/consultorio-magni-consultorio-2.jpeg">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-1" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-3" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-3" />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="img/salas/consultorio2a.jpeg">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-2" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-4" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+
+                    <input type="radio" name="radio-buttons" id="img-4" />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="img/salas/consultorio2b.jpeg">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-3" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-5" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+
+                    <input type="radio" name="radio-buttons" id="img-5" />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="img/salas/consultorio3a.jpeg">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-4" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-6" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+
+                    <input type="radio" name="radio-buttons" id="img-6" />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="img/salas/consultorio3b.jpeg">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-5" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-1" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+
+                    
+                    <div class="carousel-dots">
+                      <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                      <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                      <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                      <label for="img-4" class="carousel-dot" id="img-dot-4"></label>
+                      <label for="img-5" class="carousel-dot" id="img-dot-5"></label>
+                      <label for="img-6" class="carousel-dot" id="img-dot-6"></label>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+
+
             <div class="agendeSuaVisita" style="text-align: center;">
               <b>AGENDE SUA VISITA!</b><br>
               <span class="fa fa-phone"></span><a href="tel:048999895997"> 99989-5997 </a> -
