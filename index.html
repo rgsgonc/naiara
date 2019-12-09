@@ -143,12 +143,16 @@ input:checked + .slide-container .carousel-controls label {
      display: block; 
 }
 
+input#img-10:checked ~ .carousel-dots label#img-dot-10,
+input#img-20:checked ~ .carousel-dots label#img-dot-20,
+input#img-30:checked ~ .carousel-dots label#img-dot-30,
 input#img-1:checked ~ .carousel-dots label#img-dot-1,
 input#img-2:checked ~ .carousel-dots label#img-dot-2,
 input#img-3:checked ~ .carousel-dots label#img-dot-3,
 input#img-4:checked ~ .carousel-dots label#img-dot-4,
 input#img-5:checked ~ .carousel-dots label#img-dot-5,
-input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+input#img-6:checked ~ .carousel-dots label#img-dot-6,
+ {
 	opacity: 1;
 }
 
@@ -196,7 +200,7 @@ input:checked + .slide-container .nav label { display: block; }
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">
+          <a class="nav-link" href="#day-2" role="tab" data-toggle="tab" onclick="habilitaImagemRecepcao()">
             <img class="iconesMenu" src="img/telefone-branco.png">
             <br>
             <span>RECEPÇÃO</span>
@@ -204,7 +208,7 @@ input:checked + .slide-container .nav label { display: block; }
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">
+          <a class="nav-link" href="#day-3" role="tab" data-toggle="tab" onclick="habilitaImagemConsultorio()">
             <img class="iconesMenu" src="img/recepcao-branco.png">
             <br>
             <span>CONSULTÓRIOS</span>
@@ -212,7 +216,7 @@ input:checked + .slide-container .nav label { display: block; }
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#day-4" role="tab" data-toggle="tab">
+          <a class="nav-link" href="#day-4" role="tab" data-toggle="tab" onclick="habilitaImagemLocalizacao()">
             <span style="font-size:30px;" class="fa fa-map-marker"></span><br>
             <span>LOCALIZAÇÃO</span>
           </a>
@@ -265,55 +269,148 @@ input:checked + .slide-container .nav label { display: block; }
                 <p><b>COBRANÇA:</b> A cobrança das consultas é realizada na recepção. No final do período, entregamos
                   relatório do dia e o valor recebido.</p>
 
+                <!-- <ul class="list-inline">
+                  <li data-toggle="modal" data-target="#myModal">
+                    <a href="#myGallery" data-slide-to="0">
+                      <img style="width: 300px; height: 300px;" class="img-thumbnail" src="img/salas/recepcao1.jpeg"><br>
+                    </a>
+                  </li>
+
+                  <li data-toggle="modal" data-target="#myModal">
+                    <a href="#myGallery" data-slide-to="1">
+                      <img style="width: 300px; height: 300px" class="img-thumbnail" src="img/salas/recepcao2.jpeg"><br>
+                    </a>
+                  </li>
+
+                  <li data-toggle="modal" data-target="#myModal">
+                    <a href="#myGallery" data-slide-to="2">
+                      <img style="width: 300px; height: 300px" class="img-thumbnail" src="img/salas/recepcao3.jpeg"><br>
+                    </a>
+                  </li>
+
+                  <li data-toggle="modal" data-target="#myModal">
+                      <a href="#myGallery" data-slide-to="2">
+                        <img style="width: 300px; height: 300px" class="img-thumbnail" src="img/salas/recepcao4.jpeg"><br>
+                      </a>
+                    </li>
+                </ul>
+
+                <div class="modal fade" id="myModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <div class="pull-left">Fotos da Recepção</div>
+                        <button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
+                      </div>
+                      <div class="modal-body">
+                        <div id="myGallery" class="carousel slide" data-interval="false">
+                          <div class="carousel-inner">
+                            <div class="item active"> <img src="img/salas/recepcao1.jpeg" alt="item0">
+                              <div class="carousel-caption">
+                              </div>
+                            </div>
+
+                            <div class="item"> <img src="img/salas/recepcao2.jpeg" alt="item1">
+                              <div class="carousel-caption">
+                              </div>
+                            </div>
+
+                            <div class="item"> <img src="img/salas/recepcao3.jpeg" alt="item2">
+                              <div class="carousel-caption">
+                              </div>
+                            </div>
+
+                            <div class="item"> <img src="img/salas/recepcao4.jpeg" alt="item2">
+                              <div class="carousel-caption">
+                              </div>
+                            </div>
+                          </div>
+
+                          <a class="left carousel-control" href="#myGallery" role="button" data-slide="prev"> 
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                          </a> 
+                          
+                          <a class="right carousel-control" href="#myGallery" role="button" data-slide="next"> 
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                          </a>
+                          
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <div class="pull-left">
+                        </div>
+                        <button class="btn-sm close" type="button" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+
                 <div>
-                  <div class="carousel">
+                <div class="carousel">
                     <ul class="slides">
-                      <input type="radio" name="radio-buttons" id="img-1" checked />
+                      <input type="radio" name="radio-buttons" id="img-10" checked />
                       <li class="slide-container">
                         <div class="slide-image">
                           <img src="img/salas/recepcao1.jpeg">
                         </div>
                         <div class="carousel-controls">
-                          <label for="img-3" class="prev-slide">
+                          <label for="img-30" class="prev-slide">
                             <span>&lsaquo;</span>
                           </label>
-                          <label for="img-2" class="next-slide">
+                          <label for="img-20" class="next-slide">
                             <span>&rsaquo;</span>
                           </label>
                         </div>
                       </li>
-                      <input type="radio" name="radio-buttons" id="img-2" />
+                      <input type="radio" name="radio-buttons" id="img-20" />
                       <li class="slide-container">
                         <div class="slide-image">
                           <img src="img/salas/recepcao2.jpeg">
                         </div>
                         <div class="carousel-controls">
-                          <label for="img-1" class="prev-slide">
+                          <label for="img-10" class="prev-slide">
                             <span>&lsaquo;</span>
                           </label>
-                          <label for="img-3" class="next-slide">
+                          <label for="img-30" class="next-slide">
                             <span>&rsaquo;</span>
                           </label>
                         </div>
                       </li>
-                      <input type="radio" name="radio-buttons" id="img-3" />
+                      <input type="radio" name="radio-buttons" id="img-30" />
                       <li class="slide-container">
                         <div class="slide-image">
                           <img src="img/salas/recepcao3.jpeg">
                         </div>
                         <div class="carousel-controls">
-                          <label for="img-2" class="prev-slide">
+                          <label for="img-20" class="prev-slide">
                             <span>&lsaquo;</span>
                           </label>
-                          <label for="img-1" class="next-slide">
+                          <label for="img-10" class="next-slide">
+                            <span>&rsaquo;</span>
+                          </label>
+                        </div>
+                      </li>
+
+                      <input type="radio" name="radio-buttons" id="img-40" />
+                      <li class="slide-container">
+                        <div class="slide-image">
+                          <img src="img/salas/recepcao4.jpeg">
+                        </div>
+                        <div class="carousel-controls">
+                          <label for="img-30" class="prev-slide">
+                            <span>&lsaquo;</span>
+                          </label>
+                          <label for="img-10" class="next-slide">
                             <span>&rsaquo;</span>
                           </label>
                         </div>
                       </li>
                       <div class="carousel-dots">
-                        <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
-                        <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
-                        <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                        <label for="img-10" class="carousel-dot" id="img-dot-10"></label>
+                        <label for="img-20" class="carousel-dot" id="img-dot-20"></label>
+                        <label for="img-30" class="carousel-dot" id="img-dot-30"></label>
+                        <label for="img-40" class="carousel-dot" id="img-dot-40"></label>
                       </div>
                     </ul>
                   </div>
@@ -369,108 +466,108 @@ input:checked + .slide-container .nav label { display: block; }
             </section> -->
 
             <div>
-                <div class="carousel">
-                  <ul class="slides">
-                    <input type="radio" name="radio-buttons" id="img-1" checked />
-                    <li class="slide-container">
-                      <div class="slide-image">
-                        <img src="img/salas/consultorio-magni-consultorio-1.jpeg">
-                      </div>
-                      <div class="carousel-controls">
-                        <label for="img-6" class="prev-slide">
-                          <span>&lsaquo;</span>
-                        </label>
-                        <label for="img-2" class="next-slide">
-                          <span>&rsaquo;</span>
-                        </label>
-                      </div>
-                    </li>
-                    <input type="radio" name="radio-buttons" id="img-2" />
-                    <li class="slide-container">
-                      <div class="slide-image">
-                        <img src="img/salas/consultorio-magni-consultorio-2.jpeg">
-                      </div>
-                      <div class="carousel-controls">
-                        <label for="img-1" class="prev-slide">
-                          <span>&lsaquo;</span>
-                        </label>
-                        <label for="img-3" class="next-slide">
-                          <span>&rsaquo;</span>
-                        </label>
-                      </div>
-                    </li>
-                    <input type="radio" name="radio-buttons" id="img-3" />
-                    <li class="slide-container">
-                      <div class="slide-image">
-                        <img src="img/salas/consultorio2a.jpeg">
-                      </div>
-                      <div class="carousel-controls">
-                        <label for="img-2" class="prev-slide">
-                          <span>&lsaquo;</span>
-                        </label>
-                        <label for="img-4" class="next-slide">
-                          <span>&rsaquo;</span>
-                        </label>
-                      </div>
-                    </li>
-
-                    <input type="radio" name="radio-buttons" id="img-4" />
-                    <li class="slide-container">
-                      <div class="slide-image">
-                        <img src="img/salas/consultorio2b.jpeg">
-                      </div>
-                      <div class="carousel-controls">
-                        <label for="img-3" class="prev-slide">
-                          <span>&lsaquo;</span>
-                        </label>
-                        <label for="img-5" class="next-slide">
-                          <span>&rsaquo;</span>
-                        </label>
-                      </div>
-                    </li>
-
-                    <input type="radio" name="radio-buttons" id="img-5" />
-                    <li class="slide-container">
-                      <div class="slide-image">
-                        <img src="img/salas/consultorio3a.jpeg">
-                      </div>
-                      <div class="carousel-controls">
-                        <label for="img-4" class="prev-slide">
-                          <span>&lsaquo;</span>
-                        </label>
-                        <label for="img-6" class="next-slide">
-                          <span>&rsaquo;</span>
-                        </label>
-                      </div>
-                    </li>
-
-                    <input type="radio" name="radio-buttons" id="img-6" />
-                    <li class="slide-container">
-                      <div class="slide-image">
-                        <img src="img/salas/consultorio3b.jpeg">
-                      </div>
-                      <div class="carousel-controls">
-                        <label for="img-5" class="prev-slide">
-                          <span>&lsaquo;</span>
-                        </label>
-                        <label for="img-1" class="next-slide">
-                          <span>&rsaquo;</span>
-                        </label>
-                      </div>
-                    </li>
-
-                    
-                    <div class="carousel-dots">
-                      <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
-                      <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
-                      <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
-                      <label for="img-4" class="carousel-dot" id="img-dot-4"></label>
-                      <label for="img-5" class="carousel-dot" id="img-dot-5"></label>
-                      <label for="img-6" class="carousel-dot" id="img-dot-6"></label>
+              <div class="carousel">
+                <ul class="slides">
+                  <input type="radio" name="radio-buttons" id="img-1" checked />
+                  <li class="slide-container">
+                    <div class="slide-image">
+                      <img src="img/salas/consultorio-magni-consultorio-1.jpeg">
                     </div>
-                  </ul>
-                </div>
+                    <div class="carousel-controls">
+                      <label for="img-6" class="prev-slide">
+                        <span>&lsaquo;</span>
+                      </label>
+                      <label for="img-2" class="next-slide">
+                        <span>&rsaquo;</span>
+                      </label>
+                    </div>
+                  </li>
+                  <input type="radio" name="radio-buttons" id="img-2" />
+                  <li class="slide-container">
+                    <div class="slide-image">
+                      <img src="img/salas/consultorio-magni-consultorio-2.jpeg">
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="img-1" class="prev-slide">
+                        <span>&lsaquo;</span>
+                      </label>
+                      <label for="img-3" class="next-slide">
+                        <span>&rsaquo;</span>
+                      </label>
+                    </div>
+                  </li>
+                  <input type="radio" name="radio-buttons" id="img-3" />
+                  <li class="slide-container">
+                    <div class="slide-image">
+                      <img src="img/salas/consultorio2a.jpeg">
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="img-2" class="prev-slide">
+                        <span>&lsaquo;</span>
+                      </label>
+                      <label for="img-4" class="next-slide">
+                        <span>&rsaquo;</span>
+                      </label>
+                    </div>
+                  </li>
+
+                  <input type="radio" name="radio-buttons" id="img-4" />
+                  <li class="slide-container">
+                    <div class="slide-image">
+                      <img src="img/salas/consultorio2b.jpeg">
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="img-3" class="prev-slide">
+                        <span>&lsaquo;</span>
+                      </label>
+                      <label for="img-5" class="next-slide">
+                        <span>&rsaquo;</span>
+                      </label>
+                    </div>
+                  </li>
+
+                  <input type="radio" name="radio-buttons" id="img-5" />
+                  <li class="slide-container">
+                    <div class="slide-image">
+                      <img src="img/salas/consultorio3a.jpeg">
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="img-4" class="prev-slide">
+                        <span>&lsaquo;</span>
+                      </label>
+                      <label for="img-6" class="next-slide">
+                        <span>&rsaquo;</span>
+                      </label>
+                    </div>
+                  </li>
+
+                  <input type="radio" name="radio-buttons" id="img-6" />
+                  <li class="slide-container">
+                    <div class="slide-image">
+                      <img src="img/salas/consultorio3b.jpeg">
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="img-5" class="prev-slide">
+                        <span>&lsaquo;</span>
+                      </label>
+                      <label for="img-1" class="next-slide">
+                        <span>&rsaquo;</span>
+                      </label>
+                    </div>
+                  </li>
+
+
+                  <div class="carousel-dots">
+                    <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                    <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                    <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                    <label for="img-4" class="carousel-dot" id="img-dot-4"></label>
+                    <label for="img-5" class="carousel-dot" id="img-dot-5"></label>
+                    <label for="img-6" class="carousel-dot" id="img-dot-6"></label>
+                  </div>
+                </ul>
               </div>
+            </div>
 
 
             <div class="agendeSuaVisita" style="text-align: center;">
@@ -497,7 +594,66 @@ input:checked + .slide-container .nav label { display: block; }
                 continente/ilha.</p>
             </p>
 
-            <section id="gallery" class="wow fadeInUp">
+
+            <div>
+                <div class="carousel">
+                  <ul class="slides">
+                    <input type="radio" name="radio-buttons" id="img-100" checked />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="img/salas/vista1.jpeg">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-300" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-200" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-200" />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="img/salas/vista2.jpeg">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-100" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-300" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+                    <input type="radio" name="radio-buttons" id="img-300" />
+                    <li class="slide-container">
+                      <div class="slide-image">
+                        <img src="img/salas/vista3.jpeg">
+                      </div>
+                      <div class="carousel-controls">
+                        <label for="img-200" class="prev-slide">
+                          <span>&lsaquo;</span>
+                        </label>
+                        <label for="img-100" class="next-slide">
+                          <span>&rsaquo;</span>
+                        </label>
+                      </div>
+                    </li>
+  
+  
+  
+  
+                    <div class="carousel-dots">
+                      <label for="img-100" class="carousel-dot" id="img-dot-100"></label>
+                      <label for="img-200" class="carousel-dot" id="img-dot-200"></label>
+                      <label for="img-300" class="carousel-dot" id="img-dot-300"></label>
+                    </div>
+                  </ul>
+                </div>
+              </div>
+
+            <!-- <section id="gallery" class="wow fadeInUp">
               <div class="owl-carousel gallery-carousel">
                 <a href="img/salas/vista3.jpeg" class="venobox" data-gall="gallery-carousel">
                   <p style="text-align: center"></p><img style="height: 220px;" src="img/salas/vista3.jpeg" alt="">
@@ -509,7 +665,7 @@ input:checked + .slide-container .nav label { display: block; }
                   <p style="text-align: center"></p><img style="height: 220px;" src="img/salas/vista2.jpeg" alt="">
                 </a>
               </div>
-            </section>
+            </section> -->
 
             <section id="venue" class="wow fadeInUp">
               <div class="container-fluid">
@@ -1028,7 +1184,7 @@ input:checked + .slide-container .nav label { display: block; }
     });
   </script>
 
-  <script>
+  <!-- <script>
     const pics = document.querySelector(".testimonial-pics");
     const textFull = document.querySelector(".testimonial-contents");
 
@@ -1047,11 +1203,29 @@ input:checked + .slide-container .nav label { display: block; }
         textFull.children[current].classList.add("active");
       });
     }
-  </script>
+  </script> -->
 
   <script>
     function clica() {
       document.getElementById('bemvindo').click();
+    }
+  </script>
+
+<script>
+    function habilitaImagemRecepcao() {
+      document.getElementById('img-10').click();
+    }
+  </script>
+
+<script>
+    function habilitaImagemConsultorio() {
+      document.getElementById('img-1').click();
+    }
+  </script>
+
+<script>
+    function habilitaImagemLocalizacao() {
+      document.getElementById('img-100').click();
     }
   </script>
   <script type="text/javascript" src="https://integracaowhatsapp.com.br/whatsappOverlay.js?site=00000000034047"></script>

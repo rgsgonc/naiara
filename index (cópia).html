@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Magni Consultórios</title>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta content="magni consultorios, locação de consultório,sublocaçao de consultorio,coworking em saude,consultórios compartilhados,espaço de saude para locaçao"
+    name="keywords">
+  <meta content="A Magni Consultórios é uma clínica que atua no modelo de coworking voltado para saúde, no qual os consultórios são individualizados e a infraestrutura é compartilhada com profissionais da área."
+    name="description">
+  <link href="img/favicon2.ico" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Sofia|Amita"
+    rel="stylesheet">
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/venobox/venobox.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/flickity.min.css" rel="stylesheet">
+  <link href="css/reset.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <style>
+    /* .carousel {
+    margin-left: 15%;
+    margin-right: 15%;
+} */
+
+ul.slides {
+    display: block;
+    position: relative;
+    height: 500px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style: none;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+ul.slides input {
+    display: none; 
+}
+
+
+.slide-container { 
+    display: block; 
+}
+
+.slide-image {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease-in-out;
+}   
+
+.slide-image img {
+    width: auto;
+    min-width: 100%;
+    height: 100%;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 100px;
+    line-height: 600px;
+    color: #fff;
+}
+
+.carousel-controls label {
+    display: none;
+    position: absolute;
+    padding: 0 20px;
+    opacity: 0;
+    transition: opacity .2s;
+    cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label{
+    opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+    opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+    width: 49%;
+    text-align: left;
+    left: 0;
+}
+
+.carousel-controls .next-slide {
+    width: 49%;
+    text-align: right;
+    right: 0;
+}
+
+.carousel-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+    z-index: 999;
+    text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.5;
+    margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+     display: block; 
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+	opacity: 1;
+}
+
+
+input:checked + .slide-container .nav label { display: block; }
+
+  </style>
+
+
+</head>
+
+<body onload="clica()">
+  <header id="header">
+    <div class="container">
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li><a href="http://www.magniconsultorios.com.br/index.html">Coworking</a></li>
+          <li><a href="http://www.magniconsultorios.com.br/profissionais.html">Profissionais</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="intro">
+    <!-- Nessa sessão está a imagem principal do site -->
+    <title>Magni Consultórios</title>
+    <p style="color:white;font-size:1px;">Locação de consultório; sublocaçao de consultorio; coworking em saude;
+      consultórios compartilhados; espaço de saude para locaçao.</p>
+    <p style="color:white;font-size:1px;">Magni Consultórios - coworking em saúde florianópolis - coworking em saúde
+      floripa</p>
+  </section>
+
+  <section id="schedule" class="section-with-bg">
+    <div class="container wow fadeInUp">
+      <div class="section-header">
+        <h2>Sobre nós</h2>
+      </div>
+
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a id="bemvindo" class="nav-link active" href="#day-1" role="tab" data-toggle="tab">
+            <span style="font-size:30px;" class="fa fa-home"></span><br>
+            <span>BEM-VINDO</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#day-2" role="tab" data-toggle="tab">
+            <img class="iconesMenu" src="img/telefone-branco.png">
+            <br>
+            <span>RECEPÇÃO</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#day-3" role="tab" data-toggle="tab">
+            <img class="iconesMenu" src="img/recepcao-branco.png">
+            <br>
+            <span>CONSULTÓRIOS</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#day-4" role="tab" data-toggle="tab">
+            <span style="font-size:30px;" class="fa fa-map-marker"></span><br>
+            <span>LOCALIZAÇÃO</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="tab-content row justify-content-center">
+        <!-- Sessão Bem-Vindo -->
+        <div role="tabpanel" class="col-lg-9 tab-pane fade show active" id="day-1">
+          <div class="row schedule-item">
+            <div class="col-md-12">
+              <h4>Bem-vindo à Magni Consultórios</h4><br>
+              <p style="text-align: justify;text-indent: 1.5em">A Magni Consultórios é uma clínica que atua no
+                modelo de coworking voltado para saúde, no qual os consultórios são individualizados e a infraestrutura
+                é compartilhada com profissionais da área.
+                <p style="text-align: justify;text-indent: 1.5em">Aqui, proporcionamos a você todo o apoio
+                  administrativo e burocrático
+                  necessário, com o intuito de proporcionar mais comodidade e permitir que você consiga direcionar sua
+                  atenção aos seus atendimentos.</p>
+                <p style="text-align: justify;text-indent: 1.5em">Além disso, como o consultório será reservado apenas
+                  para o período da consulta, o investimento
+                  financeiro necessário será proporcional ao tempo que usufruir, oportunizando
+                  maior economia e flexibilidade de horários.</p>
+                <p style="text-align: justify;text-indent: 1.5em">E tem mais: não cobramos porcentagem sobre o
+                  atendimento, sendo o profissional livre para estipular
+                  o valor que deseja em suas consultas.</p>
+                <div class="agendeSuaVisita" style="text-align: center;">
+                  <b>AGENDE SUA VISITA!</b><br>
+                  <span class="fa fa-phone"></span><a href="tel:048999895997"> 99989-5997 </a> -
+                  <span class="fa fa-whatsapp"></span><a href="https://wa.me/5548999895997"> Whatsapp</a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sessão Recepção -->
+        <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-2">
+          <div class="row schedule-item">
+            <div class="col-md-12">
+              <h4>Recepção</h4><br>
+              <p style="text-align: justify;text-indent: 1.5em">Para recepcionarmos os clientes, criamos um
+                ambiente confortável e aconchegante com poltronas, televisão e acesso à internet, além de servirmos
+                café, água e bala.
+                <p style="text-align: justify;text-indent: 1.5em">Além desse espaço, oferecemos facilidade para nossos
+                  clientes através de uma
+                  recepcionista para administração de:</p><br>
+
+                <p><b>HORÁRIOS:</b> Marcamos o horário dos nossos clientes conforme o consultório solicitado.</p>
+                <p><b>AGENDA:</b> Confirmamos todos os seus pacientes 24 horas antes da consulta.</p>
+                <p><b>COBRANÇA:</b> A cobrança das consultas é realizada na recepção. No final do período, entregamos
+                  relatório do dia e o valor recebido.</p>
+
+                <!-- <ul class="list-inline">
+                  <li data-toggle="modal" data-target="#myModal">
+                    <a href="#myGallery" data-slide-to="0">
+                      <img style="width: 300px; height: 300px;" class="img-thumbnail" src="img/salas/recepcao1.jpeg"><br>
+                    </a>
+                  </li>
+
+                  <li data-toggle="modal" data-target="#myModal">
+                    <a href="#myGallery" data-slide-to="1">
+                      <img style="width: 300px; height: 300px" class="img-thumbnail" src="img/salas/recepcao2.jpeg"><br>
+                    </a>
+                  </li>
+
+                  <li data-toggle="modal" data-target="#myModal">
+                    <a href="#myGallery" data-slide-to="2">
+                      <img style="width: 300px; height: 300px" class="img-thumbnail" src="img/salas/recepcao3.jpeg"><br>
+                    </a>
+                  </li>
+
+                  <li data-toggle="modal" data-target="#myModal">
+                      <a href="#myGallery" data-slide-to="2">
+                        <img style="width: 300px; height: 300px" class="img-thumbnail" src="img/salas/recepcao4.jpeg"><br>
+                      </a>
+                    </li>
+                </ul>
+
+                <div class="modal fade" id="myModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <div class="pull-left">Fotos da Recepção</div>
+                        <button type="button" class="close" data-dismiss="modal" title="Close"> <span class="glyphicon glyphicon-remove"></span></button>
+                      </div>
+                      <div class="modal-body">
+                        <div id="myGallery" class="carousel slide" data-interval="false">
+                          <div class="carousel-inner">
+                            <div class="item active"> <img src="img/salas/recepcao1.jpeg" alt="item0">
+                              <div class="carousel-caption">
+                              </div>
+                            </div>
+
+                            <div class="item"> <img src="img/salas/recepcao2.jpeg" alt="item1">
+                              <div class="carousel-caption">
+                              </div>
+                            </div>
+
+                            <div class="item"> <img src="img/salas/recepcao3.jpeg" alt="item2">
+                              <div class="carousel-caption">
+                              </div>
+                            </div>
+
+                            <div class="item"> <img src="img/salas/recepcao4.jpeg" alt="item2">
+                              <div class="carousel-caption">
+                              </div>
+                            </div>
+                          </div>
+
+                          <a class="left carousel-control" href="#myGallery" role="button" data-slide="prev"> 
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                          </a> 
+                          
+                          <a class="right carousel-control" href="#myGallery" role="button" data-slide="next"> 
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                          </a>
+                          
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <div class="pull-left">
+                        </div>
+                        <button class="btn-sm close" type="button" data-dismiss="modal">Fechar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+
+
+                <!-- <div>
+                <div class="carousel">
+                    <ul class="slides">
+                      <input type="radio" name="radio-buttons" id="img-10" checked />
+                      <li class="slide-container">
+                        <div class="slide-image">
+                          <img src="img/salas/recepcao1.jpeg">
+                        </div>
+                        <div class="carousel-controls">
+                          <label for="img-30" class="prev-slide">
+                            <span>&lsaquo;</span>
+                          </label>
+                          <label for="img-20" class="next-slide">
+                            <span>&rsaquo;</span>
+                          </label>
+                        </div>
+                      </li>
+                      <input type="radio" name="radio-buttons" id="img-20" />
+                      <li class="slide-container">
+                        <div class="slide-image">
+                          <img src="img/salas/recepcao2.jpeg">
+                        </div>
+                        <div class="carousel-controls">
+                          <label for="img-10" class="prev-slide">
+                            <span>&lsaquo;</span>
+                          </label>
+                          <label for="img-30" class="next-slide">
+                            <span>&rsaquo;</span>
+                          </label>
+                        </div>
+                      </li>
+                      <input type="radio" name="radio-buttons" id="img-30" />
+                      <li class="slide-container">
+                        <div class="slide-image">
+                          <img src="img/salas/recepcao3.jpeg">
+                        </div>
+                        <div class="carousel-controls">
+                          <label for="img-20" class="prev-slide">
+                            <span>&lsaquo;</span>
+                          </label>
+                          <label for="img-10" class="next-slide">
+                            <span>&rsaquo;</span>
+                          </label>
+                        </div>
+                      </li>
+                      <div class="carousel-dots">
+                        <label for="img-10" class="carousel-dot" id="img-dot-10"></label>
+                        <label for="img-20" class="carousel-dot" id="img-dot-20"></label>
+                        <label for="img-30" class="carousel-dot" id="img-dot-30"></label>
+                      </div>
+                    </ul>
+                  </div>
+                </div> -->
+
+                <div class="agendeSuaVisita" style="text-align: center;">
+                  <b>AGENDE SUA VISITA!</b><br>
+                  <span class="fa fa-phone"></span><a href="tel:048999895997"> 99989-5997 </a> -
+                  <span class="fa fa-whatsapp"></span><a href="https://wa.me/5548999895997"> Whatsapp</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sessão Consultórios -->
+      <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-3">
+        <div class="row schedule-item">
+          <div class="col-md-12">
+            <h4>Consultórios</h4><br>
+            <p style="text-align: justify;text-indent: 1.5em">Nossos consultórios são decorados e equipados
+              conforme a necessidade e conforto do nosso cliente. Oferecemos maca reclinável, com regulação de altura e
+              apoio de cabeça, mesa, cadeiras, pia com acionamento por pedal, armazenamento e descarte de lixo
+              infectante e perfurocortante, ar-condicionado, luminaria led com lente de aumento, mocho, entre outros…</p>
+
+            <!-- <section id="gallery" class="wow fadeInUp">
+              <div class="owl-carousel gallery-carousel">
+                <a href="img/salas/consultorio-magni-consultorio-1.jpeg" class="venobox" data-gall="gallery-carousel">
+                  <p style="text-align: center">Sala 1</p><img style="height: 220px;" src="img/salas/consultorio-magni-consultorio-1.jpeg"
+                    alt="">
+                </a>
+                <a href="img/salas/consultorio-magni-consultorio-2.jpeg" class="venobox" data-gall="gallery-carousel">
+                  <p style="text-align: center">Sala 1</p><img style="height: 220px;" src="img/salas/consultorio-magni-consultorio-2.jpeg"
+                    alt="">
+                </a>
+                <a href="img/salas/consultorio2a.jpeg" class="venobox" data-gall="gallery-carousel">
+                  <p style="text-align: center">Sala 2</p><img style="height: 220px;" src="img/salas/consultorio2a.jpeg"
+                    alt="">
+                </a>
+                <a href="img/salas/consultorio2b.jpeg" class="venobox" data-gall="gallery-carousel">
+                  <p style="text-align: center">Sala 2</p><img style="height: 220px;" src="img/salas/consultorio2b.jpeg"
+                    alt="">
+                </a>
+                <a href="img/salas/consultorio3a.jpeg" class="venobox" data-gall="gallery-carousel">
+                  <p style="text-align: center">Sala 3</p><img style="height: 220px;" src="img/salas/consultorio3a.jpeg"
+                    alt="">
+                </a>
+                <a href="img/salas/consultorio3b.jpeg" class="venobox" data-gall="gallery-carousel">
+                  <p style="text-align: center">Sala 3</p><img style="height: 220px;" src="img/salas/consultorio3b.jpeg"
+                    alt="">
+                </a>
+              </div>
+            </section> -->
+
+            <div>
+              <div class="carousel">
+                <ul class="slides">
+                  <input type="radio" name="radio-buttons" id="img-1" checked />
+                  <li class="slide-container">
+                    <div class="slide-image">
+                      <img src="img/salas/consultorio-magni-consultorio-1.jpeg">
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="img-6" class="prev-slide">
+                        <span>&lsaquo;</span>
+                      </label>
+                      <label for="img-2" class="next-slide">
+                        <span>&rsaquo;</span>
+                      </label>
+                    </div>
+                  </li>
+                  <input type="radio" name="radio-buttons" id="img-2" />
+                  <li class="slide-container">
+                    <div class="slide-image">
+                      <img src="img/salas/consultorio-magni-consultorio-2.jpeg">
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="img-1" class="prev-slide">
+                        <span>&lsaquo;</span>
+                      </label>
+                      <label for="img-3" class="next-slide">
+                        <span>&rsaquo;</span>
+                      </label>
+                    </div>
+                  </li>
+                  <input type="radio" name="radio-buttons" id="img-3" />
+                  <li class="slide-container">
+                    <div class="slide-image">
+                      <img src="img/salas/consultorio2a.jpeg">
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="img-2" class="prev-slide">
+                        <span>&lsaquo;</span>
+                      </label>
+                      <label for="img-4" class="next-slide">
+                        <span>&rsaquo;</span>
+                      </label>
+                    </div>
+                  </li>
+
+                  <input type="radio" name="radio-buttons" id="img-4" />
+                  <li class="slide-container">
+                    <div class="slide-image">
+                      <img src="img/salas/consultorio2b.jpeg">
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="img-3" class="prev-slide">
+                        <span>&lsaquo;</span>
+                      </label>
+                      <label for="img-5" class="next-slide">
+                        <span>&rsaquo;</span>
+                      </label>
+                    </div>
+                  </li>
+
+                  <input type="radio" name="radio-buttons" id="img-5" />
+                  <li class="slide-container">
+                    <div class="slide-image">
+                      <img src="img/salas/consultorio3a.jpeg">
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="img-4" class="prev-slide">
+                        <span>&lsaquo;</span>
+                      </label>
+                      <label for="img-6" class="next-slide">
+                        <span>&rsaquo;</span>
+                      </label>
+                    </div>
+                  </li>
+
+                  <input type="radio" name="radio-buttons" id="img-6" />
+                  <li class="slide-container">
+                    <div class="slide-image">
+                      <img src="img/salas/consultorio3b.jpeg">
+                    </div>
+                    <div class="carousel-controls">
+                      <label for="img-5" class="prev-slide">
+                        <span>&lsaquo;</span>
+                      </label>
+                      <label for="img-1" class="next-slide">
+                        <span>&rsaquo;</span>
+                      </label>
+                    </div>
+                  </li>
+
+
+                  <div class="carousel-dots">
+                    <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                    <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                    <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+                    <label for="img-4" class="carousel-dot" id="img-dot-4"></label>
+                    <label for="img-5" class="carousel-dot" id="img-dot-5"></label>
+                    <label for="img-6" class="carousel-dot" id="img-dot-6"></label>
+                  </div>
+                </ul>
+              </div>
+            </div>
+
+
+            <div class="agendeSuaVisita" style="text-align: center;">
+              <b>AGENDE SUA VISITA!</b><br>
+              <span class="fa fa-phone"></span><a href="tel:048999895997"> 99989-5997 </a> -
+              <span class="fa fa-whatsapp"></span><a href="https://wa.me/5548999895997"> Whatsapp</a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sessão Localização Previlegiada -->
+      <div role="tabpanel" class="col-lg-9  tab-pane fade" id="day-4">
+        <div class="row schedule-item">
+          <div class="col-md-12">
+            <h4>Localização previlegiada</h4><br>
+            <p style="text-align: justify;text-indent: 1.5em">A localização é privilegiada!
+              <p style="text-align: justify;text-indent: 1.5em">Nosso espaço encontra-se no coração do centro de
+                Florianópolis. Para chegar à
+                Magni Consultórios, há duas opções de acesso: pelo calçadão da rua Conselheiro Mafra ou pela rua Felipe
+                Schimidt. O edifício é conhecido como Centro Comercial ARS, número 249, 12º andar, na sala 1210.</p>
+              <p style="text-align: justify;text-indent: 1.5em">Nós temos uma linda vista para o mar e para as pontes
+                que ligam Florianópolis
+                continente/ilha.</p>
+            </p>
+
+            <section id="gallery" class="wow fadeInUp">
+              <div class="owl-carousel gallery-carousel">
+                <a href="img/salas/vista3.jpeg" class="venobox" data-gall="gallery-carousel">
+                  <p style="text-align: center"></p><img style="height: 220px;" src="img/salas/vista3.jpeg" alt="">
+                </a>
+                <a href="img/salas/vista1.jpeg" class="venobox" data-gall="gallery-carousel">
+                  <p style="text-align: center"></p><img style="height: 220px;" src="img/salas/vista1.jpeg" alt="">
+                </a>
+                <a href="img/salas/vista2.jpeg" class="venobox" data-gall="gallery-carousel">
+                  <p style="text-align: center"></p><img style="height: 220px;" src="img/salas/vista2.jpeg" alt="">
+                </a>
+              </div>
+            </section>
+
+            <section id="venue" class="wow fadeInUp">
+              <div class="container-fluid">
+                <div class="row no-gutters">
+                  <div class="col-lg-12 venue-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.9039913225065!2d-48.55464258437083!3d-27.596506028715982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952739d32f6a1453%3A0x639917bde3e19314!2sMagni%20Consult%C3%B3rios!5e0!3m2!1spt-BR!2sbr!4v1572785611285!5m2!1spt-BR!2sbr"
+                      width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="agendeSuaVisita" style="text-align: center;">
+              <b>AGENDE SUA VISITA!</b><br>
+              <span class="fa fa-phone"></span><a href="tel:048999895997"> 99989-5997 </a> -
+              <span class="fa fa-whatsapp"></span><a href="https://wa.me/5548999895997"> Whatsapp</a> </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- <section class="section-with-bg wow fadeInUp">
+    <div class="container">
+      <div class="row">
+        <ul>
+          <div style="width: 220px;" class="col-lg-3 col-md-3 col-sm-12 col-xs-12 Services-tab item">
+            <div class="folded-corner service_tab_1">
+              <div class="text">
+                <i style="color:#0cb2cc;" class="fa fa-check-square-o fa-3x fa-icon-image"></i>
+                <p class="item-title">
+                  <h4 style="color: #878787;font: bold;"> CADASTRE-SE</h4>
+                </p>
+                <p style="text-align: justify;color: #878787;">
+                  Entre no link abaixo e cadastre-se online em nossa plataforma. É simples e rápido!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div style="width: 220px;" class="col-lg-3 col-md-3 col-sm-12 col-xs-12 Services-tab item">
+            <div class="folded-corner service_tab_1">
+              <div class="text">
+                <i style="color:#0cb2cc;" class="fa fa-filter fa-3x fa-icon-image"></i>
+                <p class="item-title">
+                  <h4 style="color: #878787;font: bold;">ESCOLHA SEU PLANO</h4>
+                </p>
+                <p style="text-align: justify;color: #878787;">
+                  Escolha o plano que melhor combine com você.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div style="width: 220px;" class="col-lg-3 col-md-2 col-sm-12 col-xs-12 Services-tab item">
+            <div class="folded-corner service_tab_1">
+              <div class="text">
+                <i style="color:#0cb2cc;" class="fa fa-clock-o fa-3x fa-icon-image"></i>
+                <p class="item-title">
+                  <h4 style="color: #878787;font: bold;">RESERVE O CONSULTÓRIO</h4>
+                </p>
+                <p style="text-align: justify;color: #878787;">
+                  Faça seu horário, utilize quando e como quiser.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div style="width: 220px;" class="col-lg-3 col-md-3 col-sm-12 col-xs-12 Services-tab item">
+            <div class="folded-corner service_tab_1">
+              <div class="text">
+                <i style="color:#0cb2cc;" class="fa fa-money fa-3x fa-icon-image"></i>
+                <p class="item-title">
+                  <h4 style="color: #878787;font: bold;">PAGUE ONLINE</h4>
+                </p>
+                <p style="text-align: justify;color: #878787;">
+                  O pagamento online é prático e seguro.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div style="width: 220px;" class="col-lg-3 col-md-3 col-sm-12 col-xs-12 Services-tab item">
+            <div class="folded-corner service_tab_1">
+              <div class="text">
+                <i style="color:#0cb2cc;" class="fa fa-file-text-o fa-3x fa-icon-image"></i>
+                <p class="item-title">
+                  <h4 style="color: #878787;font: bold;">O RESTO DEIXE COM A GENTE!</h4>
+                </p>
+                <p style="text-align: justify;color: #878787;">
+                  Aproveite seu espaço e preocupe-se apenas com o seu paciente.
+                </p>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="buy-tickets" class="section-with-bg wow fadeInUp">
+    <div class="container">
+      <div class="section-header">
+        <h2>Nossos Planos</h2>
+      </div>
+
+      <div class="tabelapreco">
+        <!-- Pacote de Hora Avulsa (R$40,00/hora) -->
+        <div class="col-lg-5">
+          <div class="card mb-3 mb-sm-0">
+            <div class="card-body">
+              <h5 style="color:#f82249 !important;" class="card-title text-muted text-uppercase text-center">Hora
+                Avulsa</h5>
+              <h6 class="card-price text-center">R$40,00/hora</h6>
+              <hr>
+              <ul class="fa-ul">
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Marque a qualquer hora
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Recepcionista disponível
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Confirmação de pacientes com 24 horas de antecedência
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Remarcação de horário sem custo com até 12 horas de antecedência
+                </li>
+                <li style="height: 38px;">
+                  <span class="fa-li"></span>
+                  <p style="font-size:10px;">* Acréscimo de R$10,00, caso utilize lixo infectante/perfurante</p>
+                </li>
+              </ul>
+              <hr>
+              <div class="text-center">
+                <button type="button" class="btn" data-ticket-type="standard-access"><a style="color:#fff;" href="https://wa.me/5548999895997">
+                    Contratar</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="espaco"></p>
+
+        <!-- Pacote 10 hrs mensais ($300,00/mês) -->
+        <div class="col-lg-5">
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+              <h5 style="color:#f82249 !important;" class="card-title text-muted text-uppercase text-center">Pacote 10
+                horas mensal</h5>
+              <h6 class="card-price text-center">R$300,00/mês</h6>
+              <hr>
+              <ul class="fa-ul">
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span> Marque até 10 horas avulsas dentro do mês
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Recepcionista disponível
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Confirmação de pacientes com 24 horas de antecedência
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Remarcação de horário sem custo com até 12 horas de antecedência
+                </li>
+
+                <li>
+                  <span class="fa-li"></span>
+                  <p style="font-size:10px;">* Acréscimo de R$50,00, caso utilize lixo infectante/perfurante</p>
+                </li>
+
+              </ul>
+              <hr>
+              <div class="text-center">
+                <button type="button" class="btn" data-ticket-type="standard-access"><a style="color:#fff;" href="https://wa.me/5548999895997">
+                    Contratar</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section style="padding: 0px;" id="buy-tickets" class="section-with-bg wow fadeInUp">
+    <div class="container">
+      <div class="tabelapreco2">
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 style="color:#f82249 !important;" class="card-title text-muted text-uppercase text-center">Período
+                mensal</h5>
+              <h6 class="card-price text-center">R$330/mês</h6>
+              <hr>
+              <ul class="fa-ul">
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span> Período fixo de 4 horas semanais
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Recepcionista disponível
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Confirmação de pacientes com 24 horas de antecedência
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span> Propaganda nas redes sociais
+                </li>
+
+                <li><span class="fa-li"></span>
+                  <p style="font-size:10px;">* Acréscimo de R$50,00, caso utilize lixo infectante/perfurante</p>
+                </li>
+              </ul>
+              <hr>
+              <div class="text-center">
+                <button type="button" class="btn" data-ticket-type="standard-access"><a style="color:#fff;" href="https://wa.me/5548999895997">
+                    Contratar</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="espaco"></p>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 style="color:#f82249 !important;" class="card-title text-muted text-uppercase text-center">Período
+                Trimestral</h5>
+              <h6 class="card-price text-center">R$310/mês</h6>
+              <hr>
+              <ul class="fa-ul">
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span> Período fixo de 4 horas semanais
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Recepcionista disponível
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Confirmação de pacientes com 24 horas de antecedência
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span> Propaganda nas redes sociais
+                </li>
+
+                <li><span class="fa-li"></span>
+                  <p style="font-size:10px;">* Acréscimo de R$50,00, caso utilize lixo infectante/perfurante</p>
+                </li>
+              </ul>
+              <hr>
+              <div class="text-center">
+                <button type="button" class="btn" data-ticket-type="standard-access"><a style="color:#fff;" href="https://wa.me/5548999895997">
+                    Contratar</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="espaco"></p>
+
+        <div class="col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 style="color:#f82249 !important;" class="card-title text-muted text-uppercase text-center">Período
+                Semestral</h5>
+              <h6 class="card-price text-center">R$290/mês</h6>
+              <hr>
+              <ul class="fa-ul">
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span> Período fixo de 4 horas semanais
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Recepcionista disponível
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span>Confirmação de pacientes com 24 horas de antecedência
+                </li>
+
+                <li>
+                  <span class="fa-li">
+                    <i class="fa fa-check"></i>
+                  </span> Propaganda nas redes sociais
+                </li>
+
+                <li><span class="fa-li"></span>
+                  <p style="font-size:10px;">* Acréscimo de R$50,00, caso utilize lixo infectante/perfurante</p>
+                </li>
+              </ul>
+              <hr>
+              <div class="text-center">
+                <button type="button" class="btn" data-ticket-type="standard-access"><a style="color:#fff;" href="https://wa.me/5548999895997">
+                    Contratar</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="buy-tickets" class="section-with-bg wow fadeInUp">
+    <div class="section-header">
+      <h2>Depoimentos</h2>
+    </div>
+    <div class="main-gallery">
+      <div class="gallery-cell">
+        <div class="testimonial">
+          <img class="testimonial-avatar" src="img/depoimentos/monik.png">
+          <q class="testimonial-quote">"Acho incrível a Ideia que a magni adotou em criar um consultório compartilhado.
+            Minha experiência com a clínica vem sendo positiva, a localização é ótima, as salas são bem estruturadas, o
+            ambiente climatizado, sem contar o suporte que a secretária oferece confirmando a agenda profissional. Para
+            quem não tem um espaço físico para atendimento recomendo."</q>
+          <span class="testimonial-author">Monik Emille Moreira CRFa - 10999</span>
+        </div>
+      </div>
+      <div class="gallery-cell">
+        <div class="testimonial">
+          <img class="testimonial-avatar" src="img/depoimentos/bianca.png">
+          <q class="testimonial-quote">"O ambiente é ótimo! A recepção é bastante agradável e as salas possuem uma
+            estrutura excelente para atendimentos. Está tudo sempre muito bem higienizado e organizado para chegar e
+            atender, além de ficar em uma das melhores localizações do centro de Florianópolis. Fui sempre muito bem
+            atendida e os pacientes também adoram o local!"</q>
+          <span class="testimonial-author">Bianca Regiane Pires Vigo - CRN 106786P</span>
+        </div>
+      </div>
+      <div class="gallery-cell">
+        <div class="testimonial">
+          <img class="testimonial-avatar" src="img/depoimentos/jessica.png">
+          <q class="testimonial-quote">"A Magni Consultórios atende minhas necessidades como nutricionista porque
+            proporciona uma sala muito confortável para mim e para meus pacientes. Além disso a equipe é muito
+            atenciosa quando busco algum apoio para organizar a agenda ou entrar em contato com os pacientes. E também
+            vale comentar que os espaços estão sempre higienizados e são decorados, o que demonstra cuidado com todos
+            que compartilham."</q>
+          <span class="testimonial-author">Jéssica Rasquim Araujo - CRN 106617</span>
+        </div>
+      </div>
+      <div class="gallery-cell">
+        <div class="testimonial">
+          <img class="testimonial-avatar" src="img/depoimentos/susana.png">
+          <q class="testimonial-quote">"Acredito que nada acontece por acaso e o Magni Consultórios surgiu no momento
+            exato para tirar o meu Studio do papel! No Centro de Florianópolis, super bem localizado, equipado e com
+            uma equipe de apoio que me oferece o suporte necessário! Meu trabalho é humanizado, lido com a alma humana,
+            e este diferencial eu encontro, diariamente, nesta super parceria com o Magni Consultórios!"</q>
+          <span class="testimonial-author">Susana Souza - Terapeuta Transpessoal Integrativa - CRTH-BR 4300</span>
+        </div>
+      </div>
+      <div class="gallery-cell">
+        <div class="testimonial">
+          <img class="testimonial-avatar" src="img/depoimentos/magnus.png">
+          <q class="testimonial-quote">"Minha experiência está sendo ótima nos consultórios Magni. Excelência no
+            atendimento, organização, limpeza e harmonia são características identificadas e que fazem toda diferença.
+            "</q>
+          <span class="testimonial-author">Magnus Wailer CREF 024431- G/SC - Prof. Esp. Pscilogia Esportiva - Life
+            Coach - Terapeuta Reikiano</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 footer-info">
+            <img class="logofooter" src="img/logo.png" alt="Magni-consultórios-logo">
+            <p style="text-align: justify;font-family: 'Open Sans', sans-serif;text-indent: 1.5em">A
+              Magni Consultórios é uma clínica que atua no modelo de coworking voltado para saúde, no qual os
+              consultórios são individualizados e a infraestrutura é compartilhada com profissionais da área.</p>
+          </div>
+
+          <!-- <div class="col-lg-4 col-md-6 footer-links">
+            <h4 style="font-family: 'Open Sans', sans-serif;">Links</h4>
+            <ul>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a style="font-family: 'Open Sans', sans-serif;" href="#">Home</a>
+              </li>
+
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a style="font-family: 'Open Sans', sans-serif;" href="#schedule">Sobre Nós</a>
+              </li>
+
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a style="font-family: 'Open Sans', sans-serif;" href="#buy-tickets">Nossos Planos</a>
+              </li>
+
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a style="font-family: 'Open Sans', sans-serif;" href="#buy-tickets">Depoimentos</a>
+              </li>
+            </ul>
+          </div> -->
+
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4 style="font-family: 'Open Sans', sans-serif;">Links</h4>
+            <ul>
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a style="font-family: 'Open Sans', sans-serif;" href="#">Home</a>
+              </li>
+
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a style="font-family: 'Open Sans', sans-serif;" href="#schedule">Sobre Nós</a>
+              </li>
+
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a style="font-family: 'Open Sans', sans-serif;" href="#buy-tickets">Nossos Planos</a>
+              </li>
+
+              <li>
+                <i class="fa fa-angle-right"></i>
+                <a style="font-family: 'Open Sans', sans-serif;" href="#buy-tickets">Depoimentos</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4 style="font-family: 'Open Sans', sans-serif;">Contatos</h4>
+            <p style="font-family: 'Open Sans', sans-serif;">
+              Centro de Florianópolis Rua Felipe Schimidt, 249 Sala 1210 - 12° andar<br>
+              <span class="fa fa-whatsapp"></span> (48) 99989-5997<br>
+              <span class="fa fa-envelope"></span> magniconsultorios@gmail.com<br>
+            </p>
+            <div class="social-links">
+              <a href="https://www.instagram.com/magniconsultorios/" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Magni Consultórios</strong>. Todos os direitos reservados
+      </div>
+      <div class="credits">
+        Criado por <a href="#">Rafael Santos</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/venobox/venobox.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/flickity.pkgd.min.js"></script>
+  <script src="contactform/contactform.js"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    var flkty = new Flickity('.main-gallery', {
+      cellAlign: 'left',
+      contain: true,
+      wrapAround: true,
+      prevNextButtons: false,
+      autoPlay: 5000
+    });
+  </script>
+
+  <!-- <script>
+    const pics = document.querySelector(".testimonial-pics");
+    const textFull = document.querySelector(".testimonial-contents");
+
+    for (pic of pics.children) {
+      pic.addEventListener("click", function () {
+        for (elem of pics.children) {
+          elem.classList.remove("active");
+        }
+        this.classList.add("active");
+
+        const current = Number(this.getAttribute("id"));
+
+        for (text of textFull.children) {
+          text.classList.remove("active");
+        }
+        textFull.children[current].classList.add("active");
+      });
+    }
+  </script> -->
+
+  <script>
+    function clica() {
+      document.getElementById('bemvindo').click();
+    }
+  </script>
+  <script type="text/javascript" src="https://integracaowhatsapp.com.br/whatsappOverlay.js?site=00000000034047"></script>
+
+</body>
+
+</html>
